@@ -16,12 +16,57 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
+    <!--start Alisa Korniienko-->
     <header class="header">
       <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global/global.header-nav.partial.html"></nav>
       <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-hero.partial.html"></div>
     </header>
-    <main></main>
-    <footer></footer>
+    <!--end Alisa Korniienko-->
+    <main>
+      <!-- start Olena Hrynyshyn section -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-natural.partial.html"
+      ></section>
+      <!-- end Olena Hrynyshyn section -->
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-about.partial.html"
+      ></nav>
+      <!-- History block (Number 6) - Anton. -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-history.partial.html"
+      ></section>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-join.partial.html"
+      ></nav>
+      <!--start Mariia Kochetkova https://trello.com/c/aqzF1Xo4/10-10-categories-->
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.categories.partial.html"
+      ></div>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-discounts.partial.html"
+      ></section>
+      <!--end Mariia Kochetkova https://trello.com/c/aqzF1Xo4/10-10-categories-->
+    </main>
+    <footer>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></nav>
+    </footer>
   </body>
 </html>

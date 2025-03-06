@@ -1,0 +1,5 @@
+<!-- filepath: /workspaces/1368-team-01/img/global/helpers/long-divider.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="3000px" height="31" id="long-divider">
+    <path d="M0 15.5 L3000 15.5" style="fill: none; stroke: rgba(255, 255, 255, 0.06); stroke-width: 1px;">
+    </path>
+</svg>
