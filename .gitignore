@@ -1,0 +1,52 @@
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+*.iws
+
+# Ignore IntelliJ IDEA project workspace file
+*.ipr
+
+# Ignore compiled files
+/out/
+/build/
+/target/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temp files
+/logs/
+*.log
+
+# Ignore Maven and Gradle files
+.mvn/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Ignore dependency directories
+/node_modules/
+/.venv/
+
+# Ignore coverage reports
+/coverage/
+/test-results/
+
+# Ignore JetBrains specific files
+/.idea_modules/
+/.ijwb/
+
+# Ignore generated files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore VCS specific files
+*.swp
+*.swo
+*.bak
+
+# Ignore Python virtual environments
+venv/
+__pycache__/
