@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000px" height="32">
+    <symbol id="short-divider">
+        <path d="M0 16 L3000 16" style="fill: none; stroke: rgb(200, 105, 58); stroke-width: 2px;"></path>
+    </symbol>
+</svg>
