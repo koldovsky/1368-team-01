@@ -11,11 +11,17 @@
 .hero__content-subtitle {
     font-size: 28px;
     color: var(--brand-color);
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hero__content-title {
     font-size: 84px;
     color: var(--title-color);
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hero__content-description {
