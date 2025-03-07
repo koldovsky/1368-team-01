@@ -1,3 +1,5 @@
+/* Rubik font import */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
@@ -9,7 +11,10 @@
     box-sizing: border-box;
 }
 
-:root {
+:root{
+    --index-history-p-font: 'Rubik', sans-serif;
+    --index-history-header-font: 'Prata', serif;
+    --index-history-font-color: #898082;
     --title-color: rgb(255, 255, 255);
     --brand-color: rgb(200, 105, 58);
     scroll-behavior: smooth;
