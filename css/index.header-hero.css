@@ -10,12 +10,12 @@
 
 .hero__content-subtitle {
     font-size: 28px;
-    color: #c66a37;
+    color: var(--brand-color);
 }
 
 .hero__content-title {
     font-size: 84px;
-    color: white;
+    color: var(--title-color);
 }
 
 .hero__content-description {
@@ -28,7 +28,7 @@
 }
 
 .hero__content-buttons .button.button--primary {
-    background: #c66a37;
+    background: var(--brand-color);
     color: #fff;
     padding: 12px;
     border-radius: 4px;

@@ -5,3 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --title-color: rgb(255, 255, 255);
+    --brand-color: rgb(200, 105, 58);
+    scroll-behavior: smooth;
+}
