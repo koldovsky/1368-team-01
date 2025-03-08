@@ -1,61 +1,61 @@
 .hero__content {
-    background: url(../img/hero-section-background.jpeg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 840px;
-    text-align: center;
-    padding-top: 200px;
+  background: url(../img/hero-section-background.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 840px;
+  text-align: center;
+  padding-top: 200px;
 }
 
 .hero__content-subtitle {
-    font-size: 28px;
-    color: var(--brand-color);
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
+  font-size: 28px;
+  color: var(--brand-color);
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero__content-title {
-    font-size: 84px;
-    color: var(--title-color);
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-size: 84px;
+  color: var(--title-color);
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero__content-description {
-    font-size: 18px;
-    color: white;
+  font-size: 18px;
+  color: white;
 }
 
 .hero__content-buttons {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .hero__content-buttons .button.button--primary {
-    background: var(--brand-color);
-    color: #fff;
-    padding: 12px;
-    border-radius: 4px;
-    text-decoration: none;
-    line-height: 1;
-    font-weight: 400;
-    font-size: 16.5px;
+  background: var(--brand-color);
+  color: #fff;
+  padding: 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 16.5px;
 }
 
 .hero__content-buttons .button.button--secondary {
-    background: transparent;
-    color: #fff;
-    border-width: 2px;
-    border-color: #fff;
-    padding: 10px;
-    border-radius: 4px;
-    text-decoration: none;
-    line-height: 1;
-    font-weight: 400;
-    border-width: 2px;
-    border-style: solid;
-    box-sizing: border-box;
-    font-size: 16.5px;
+  background: transparent;
+  color: #fff;
+  border-width: 2px;
+  border-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 400;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  font-size: 16.5px;
 }
