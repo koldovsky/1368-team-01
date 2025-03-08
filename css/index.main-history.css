@@ -18,6 +18,7 @@
 }
 
 .history{
+    padding: 60px 40px;
     margin: 0;
     background-color: #261e1c;
 }
@@ -25,38 +26,37 @@
 .history__img-container{
     display: flex;
     margin: 0 auto;
-    justify-content: center;
-}
-
-.history__img-container img{
-    max-width: 100%;
+    padding: 0 15px;
     width: 90vw;
-    margin-top: 7rem;
+    justify-content: center;
+    max-width: 100%;
 }
-
+.history__img-container img{
+    width: 90vw;
+    max-width: 100%;
+}
 .history__card {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
+    margin-top: 50px;
 }
 
 .history__card-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top center;
     align-items: flex-start;
-    text-align: left; 
+    text-align: left;
+    padding: 0 15px; 
     width: 100%;
-    margin: 0;
 }
 
 
 
 
 .history__card-item h4 {
-    margin-bottom: 2rem;
-    font-size: clamp(22px, 2vw, 24px);
+    margin-top: 20px;
+    font-size: 22px;
     color: white;
     font-weight: normal;
     font-family: var(--index-history-p-font);
@@ -65,8 +65,7 @@
 }
 
 .history__item-desc {
-    margin-top: 2rem;
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: 16px;
     color: #898082;
     font-weight: normal;
     font-family: var(--index-history-header-font);
@@ -74,7 +73,7 @@
 }
 
 .history__item-year {
-    margin-bottom: 3rem;
+    margin-top: 40px;
     font-size: 14px;
     color: #c8693a;
     font-weight: normal;
@@ -84,11 +83,11 @@
 }
 @media (min-width: 500px) and (max-width: 799px) {
     .history__card {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (min-width: 800px) {
     .history__card {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        grid-template-columns: repeat(4, 1fr); 
     }
 }
