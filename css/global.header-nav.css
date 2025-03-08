@@ -1,0 +1,39 @@
+.header__nav {
+    position: fixed;
+    display: flex;
+    padding: 20px 0px 20px 80px;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header__logo {
+    width: 176px;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    grid-gap: 20px;
+}
+
+.header__menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+.header__socials {
+    flex: 0.5;
+    list-style: none;
+    display: flex;
+    grid-gap: 20px;
+}
+
+.header__menu-link svg:hover {
+    fill-opacity: 1;
+    fill: var(--brand-color);
+    stroke: rgba(0, 0, 0, 0.5);
+}
