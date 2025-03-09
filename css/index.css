@@ -3,4 +3,8 @@
 @import "index.header-hero.css";
 /* History (Section 6) */
 @import "index.main-history.css";
-@import "index.main-awards.css"
+@import "index.main-awards.css";
+
+@import "global.footer.css";
+
+
