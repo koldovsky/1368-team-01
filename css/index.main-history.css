@@ -1,4 +1,4 @@
-/* Globals mods for testing purposes
+/* Globals for testing purposes
 
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
@@ -26,8 +26,8 @@
     align-items: center;
 }
 .history_inner{
-    padding: 60px 40px;
-    margin: 0 10px;
+    padding: 60px 0px 120px;
+    margin: 0 4vw;
 }
 .history__img-container{
     display: flex;
@@ -35,12 +35,13 @@
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    padding: 0 15px;
 }
 .history__img-container img{
     display:flex;
     align-items: center;
     justify-content: center;
-    width: 90vw;
+    width: 100vw;
     max-width: 100%;
 }
 .history__card {
@@ -89,10 +90,16 @@
 @media (min-width: 400px) and (max-width: 1000px) {
     .history__card {
         grid-template-columns: repeat(2, 1fr);
+        .history_inner{
+            margin: 0 20px;
+        }
     }
 }
 @media (min-width: 1000px) {
     .history__card {
         grid-template-columns: repeat(4, 1fr); 
+        .history_inner{
+            margin: 0 0px;
+        }
     }
 }
