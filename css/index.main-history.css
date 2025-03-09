@@ -1,4 +1,4 @@
-/* Globals for testing purposes
+
 
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
@@ -18,7 +18,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-*/
+
 .history{
     padding: 60px 0px 120px;
     margin: 0;
@@ -90,16 +90,10 @@
 @media (min-width: 400px) and (max-width: 1000px) {
     .history__card {
         grid-template-columns: repeat(2, 1fr);
-        .history_inner{
-            margin: 0 20px;
-        }
     }
 }
 @media (min-width: 1000px) {
     .history__card {
         grid-template-columns: repeat(4, 1fr); 
-        .history_inner{
-            margin: 0 0px;
-        }
     }
 }
