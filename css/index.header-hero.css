@@ -1,5 +1,6 @@
 .hero__content {
     background: url(../img/hero-section-background.jpeg);
+    background-color: rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-position: center;
     width: 100%;
