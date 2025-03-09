@@ -1,11 +1,13 @@
-/* Rubik font import */
+/* Globals for testing purposes
+
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-/* Prata font import */
+
 @import url("https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
-  --index-history-p-font: "Rubik", sans-serif;
-  --index-history-header-font: "Prata", serif;
+  --index-history-other-font: "Rubik", sans-serif;
+  --index-history-h-font: "Prata", serif;
   --index-history-font-color: #898082;
 }
 
@@ -16,75 +18,88 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.history {
-  margin: 0;
-  background-color: #261e1c;
+*/
+.history{
+    padding: 60px 0px 120px;
+    margin: 0;
+    background-color: #261e1c;
+    align-items: center;
 }
-
-.history__img-container {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
+.history_inner{
+    padding: 60px 0px 120px;
+    margin: 0 4vw;
 }
-
-.history__img-container img {
-  max-width: 100%;
-  width: 90vw;
-  margin-top: 7rem;
+.history__img-container{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 15px;
 }
-
+.history__img-container img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 100%;
+}
 .history__card {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
 }
 
 .history__card-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-  width: 100%;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: top center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 15px; 
+    width: 100%;
 }
 
 .history__card-item h4 {
-  margin-bottom: 2rem;
-  font-size: clamp(22px, 2vw, 24px);
-  color: white;
-  font-weight: normal;
-  font-family: var(--index-history-p-font);
-  text-align: left;
+    margin-top: 20px;
+    font-size: 22px;
+    color: white;
+    font-weight: normal;
+    font-family: var(--index-history-h-font);
+    text-align: left;  
+    
 }
 
 .history__item-desc {
-  margin-top: 2rem;
-  font-size: clamp(16px, 2vw, 20px);
-  color: #898082;
-  font-weight: normal;
-  font-family: var(--index-history-header-font);
-  text-align: left;
+    font-size: 16px;
+    color: #898082;
+    font-weight: normal;
+    font-family: var(--index-history-other-font);
+    text-align: left;  
 }
 
 .history__item-year {
-  margin-bottom: 3rem;
-  font-size: 14px;
-  color: #c8693a;
-  font-weight: normal;
-  font-style: italic;
-  font-family: var(--index-history-p-font);
-  text-align: left;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #c8693a;
+    font-weight: normal;
+    font-style: italic;
+    font-family: var(--index-history-other-font);
+    text-align: left;  
 }
-@media (min-width: 500px) and (max-width: 799px) {
-  .history__card {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  }
+@media (min-width: 400px) and (max-width: 1000px) {
+    .history__card {
+        grid-template-columns: repeat(2, 1fr);
+        .history_inner{
+            margin: 0 20px;
+        }
+    }
 }
-@media (min-width: 800px) {
-  .history__card {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  }
+@media (min-width: 1000px) {
+    .history__card {
+        grid-template-columns: repeat(4, 1fr); 
+        .history_inner{
+            margin: 0 0px;
+        }
+    }
 }
