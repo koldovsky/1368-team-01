@@ -1,6 +1,8 @@
 @import "global.css";
 @import "global.header-nav.css";
 @import "index.header-hero.css";
+/* 4-cta discovery */
+@import "index.crafted.css";
 /* History (Section 6) */
 @import "index.main-history.css";
 @import "index.main-awards.css";
