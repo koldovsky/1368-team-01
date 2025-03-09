@@ -1,11 +1,12 @@
 .header__nav {
     position: fixed;
     display: flex;
-    padding: 20px 0px 20px 80px;
+    height: 105px;
+    /*padding: 20px 0px 20px 80px;*/
     background: rgba(0, 0, 0, 0.5);
-    top: 0;
     flex-direction: row;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    padding-left: 174px;
     align-items: center;
     width: 100%;
 }
@@ -14,20 +15,41 @@
     width: 176px;
 }
 
+.header__logo-container {
+    padding-right: 494px;
+}
+
 .header__menu {
     list-style: none;
     display: flex;
-    grid-gap: 20px;
+    grid-gap: 16px;
+    padding-right: 38px;
 }
 
 .header__menu-link {
-    color: white;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.2px;
     text-decoration: none;
+    font-family: var(--header-menu-font);
 }
 
 .header__socials {
     flex: 0.5;
     list-style: none;
     display: flex;
-    grid-gap: 20px;
+    grid-gap: 15px;
 }
+
+.header__menu-link svg:hover {
+    all: initial; /* reset css*/
+    path {
+        fill: var(--brand-color);
+        transition: fill 0.2s ease-out;
+    }
+    path.logo_2gS {
+        fill-opacity: 0;
+    }   
+}
+    
+

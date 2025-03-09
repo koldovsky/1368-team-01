@@ -1,6 +1,8 @@
-/* Rubik font import */
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-/* Prata font import */
+
 @import url("https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
@@ -18,21 +20,28 @@
 }
 
 .history{
-    padding: 60px 40px;
+    padding: 60px 0px 120px;
     margin: 0;
     background-color: #261e1c;
+    align-items: center;
 }
-
+.history_inner{
+    padding: 60px 0px 120px;
+    margin: 0 4vw;
+}
 .history__img-container{
     display: flex;
-    margin: 0 auto;
-    padding: 0 15px;
-    width: 90vw;
+    width: 100vw;
     justify-content: center;
+    align-items: center;
     max-width: 100%;
+    padding: 0 15px;
 }
 .history__img-container img{
-    width: 90vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
     max-width: 100%;
 }
 .history__card {
