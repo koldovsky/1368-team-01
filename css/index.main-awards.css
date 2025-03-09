@@ -1,0 +1,82 @@
+.awards {
+    background-color: #261e1c;
+    padding: 40px;
+}
+
+.awards__label {
+    font-size: 21px;
+    color: var(--brand-color);
+    font-family: "Prata", serif;
+    font-weight: 400;
+}
+
+.awards__title,
+.awards__label,
+.awards__description,
+.awards__list-title,
+.awards__list-year {
+    color: white;
+}
+
+.awards__list-description {
+    color: #898082;
+}
+
+.awards__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.awards__list-item {
+    display: grid;
+    grid-template-columns: 100px 200px 80px 1fr; /* Image | Title | Year | Description */
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.awards__list-img {
+    width: 100px;
+    height: auto;
+}
+
+.awards__list-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.awards__list-year {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .awards__list-item {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .awards__list-img {
+        width: 80px; 
+    }
+
+    .awards__list-title {
+        font-size: 16px;
+    }
+
+    .awards__list-year {
+        font-size: 20px;
+    }
+
+    .awards__list-description {
+        font-size: 14px;
+    }
+}
