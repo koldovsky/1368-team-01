@@ -15,9 +15,13 @@
     --index-history-p-font: 'Rubik', sans-serif;
     --index-history-header-font: 'Prata', serif;
     --index-history-font-color: #898082;
-    --header-menu-font: 'Rubik', sans-serif;
-    --title-color: rgb(255, 255, 255);
+    --prata-font: 'Prata', serif;
+    --great-vibes-font: 'Great Vibes', cursive;
+    --rubik-font: 'Rubik', sans-serif;
+    --color-light: rgb(255, 255, 255);
     --brand-color: rgb(200, 105, 58);
+    --btn-hover-color: rgb(175, 86, 42);
+    --btn-border-radius: 2px;
     scroll-behavior: smooth;
     --background-color:rgba(0, 0, 0, 0.5);
 }
