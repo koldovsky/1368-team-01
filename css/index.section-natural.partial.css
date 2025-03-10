@@ -3,11 +3,7 @@
   color: var(--color-light);
   text-align: center;
 }
-.natural__container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 60px 20px;
-}
+
 h2 {
   color: var(--brand-color);
   font-family: var(--great-vibes-font);
