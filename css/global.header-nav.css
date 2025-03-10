@@ -2,10 +2,8 @@
     position: fixed;
     display: flex;
     height: 105px;
-    /*padding: 20px 0px 20px 80px;*/
     background: rgba(0, 0, 0, 0.5);
     flex-direction: row;
-    /*justify-content: space-between;*/
     padding-left: 174px;
     align-items: center;
     width: 100%;
@@ -27,11 +25,11 @@
 }
 
 .header__menu-link {
-    color: #fff;
+    color: var(--color-light);
     font-size: 14px;
     letter-spacing: 0.2px;
     text-decoration: none;
-    font-family: var(--header-menu-font);
+    font-family: var(--rubik-font);
 }
 
 .header__socials {
