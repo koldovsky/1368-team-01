@@ -23,5 +23,6 @@
     --btn-hover-color: rgb(175, 86, 42);
     --btn-border-radius: 2px;
     scroll-behavior: smooth;
-    --background-color-footer:rgb(26, 21, 18);;
+    --background-color-dark:#261e1c;
+    --background-color-footer:rgb(26, 21, 18);
 }
