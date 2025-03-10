@@ -9,18 +9,24 @@
     color: var(--brand-color);
     font-family: var(--great-vibes-font);
     font-size: 21px;
+    text-align: center;
 }
 .crafted__text {
     color: var(--color-light);
     font-family: var(--prata-font);
     font-size: 71px;
+    text-align: center;
 }
 .crafted__description {
     color: var(--color-light);
     font-family: var(--rubik-font);
     font-size: 18px;
+    text-align: center;
 }
 .crafted__button {
     color: var(--color-light);
     font-family: var(--rubik-font);
+}
+.crafted__buttons {
+    text-align: center;
 }
