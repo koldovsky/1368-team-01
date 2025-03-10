@@ -5,5 +5,8 @@
 @import "index.crafted.css";
 /* History (Section 6) */
 @import "index.main-history.css";
+@import "index.main-about.css";
 @import "index.main-awards.css";
 @import "index.faq.css";
+
+@import "global.footer.css";
