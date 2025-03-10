@@ -19,4 +19,5 @@
     --title-color: rgb(255, 255, 255);
     --brand-color: rgb(200, 105, 58);
     scroll-behavior: smooth;
+    --background-color:rgba(0, 0, 0, 0.5);
 }
