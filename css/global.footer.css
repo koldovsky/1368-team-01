@@ -1,4 +1,33 @@
-.footer__block , .footer__container{
-   background-color: var(--background-color-footer);
+.footer {
+    width: 100%;
 }
 
+.footer__block, .footer__column {
+    background-color: var(--background-color-footer);
+}
+
+.footer__bottom {
+    background-color: rgb(19, 15, 14);
+    color: var(--color-light);
+    font-family: var(--index-history-p-font);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 62px;
+    padding-left: 174px;
+    padding-right: 174px;
+}
+
+.footer__bottom-created,
+.footer__bottom-reserved {
+    margin: 0;
+}
+
+.footer__bottom-created {
+    text-align: left;
+}
+
+.footer__bottom-reserved {
+    text-align: right;
+}
