@@ -4,8 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
-  --index-history-other-font: "Rubik", sans-serif;
-  --index-history-h-font: "Prata", serif;
+  --index-history-p-font: 'Rubik', sans-serif;
+  --index-history-header-font: 'Prata', serif;
   --index-history-font-color: #898082;
 }
 
@@ -63,7 +63,7 @@
     font-size: 22px;
     color: white;
     font-weight: normal;
-    font-family: var(--index-history-h-font);
+    font-family: var(--index-history-header-font);
     text-align: left;  
     
 }
@@ -72,7 +72,7 @@
     font-size: 16px;
     color: #898082;
     font-weight: normal;
-    font-family: var(--index-history-other-font);
+    font-family: var(--index-history-p-font);
     text-align: left;  
 }
 
@@ -82,7 +82,7 @@
     color: #c8693a;
     font-weight: normal;
     font-style: italic;
-    font-family: var(--index-history-other-font);
+    font-family: var(--index-history-p-font);
     text-align: left;  
 }
 @media (min-width: 400px) and (max-width: 1000px) {
