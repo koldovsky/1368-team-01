@@ -1,11 +1,13 @@
 .footer {
     width: 100%;
 }
-.footer__block, .footer__column {
+
+.footer__info-top, .footer__column {
     background-color: var(--background-color-footer);
 
 }
-.footer__block{
+
+.footer__info-top{
     padding-left: 174px;
     padding-right: 174px;
     display: flex;
@@ -14,22 +16,22 @@
     padding:110px 174px 15px 174px;
     
 }
-.footer__block-left, .footer__block-right{
+
+.footer__info-left, .footer__info-right{
     font-family: var(--index-history-p-font);
     flex:1;
     margin: 0 10px;
     box-sizing: border-box;
-    
+    flex-direction: column; 
+    display: flex;
 }
-.footer__block-left{
+
+.footer__info-left{
     text-align: left;
     max-width: 100%;
-    flex-direction: column;
-    display: flex;
 }
-.footer__block-right{
-    display: flex;
-    flex-direction: column; 
+
+.footer__info-right{
     align-items: flex-end; 
     width: 370px;
     height: 133px;
@@ -39,16 +41,16 @@
 .footer__email-input {
     font-size: 15px;
     width: 100%;
-    background-color: rgba(73, 73, 73, 0.24);
+    background-color: var(--background-color-footer-email);
     color: var(--color-light);
-   line-height: 18px;
-   font-weight: 400px;
-   padding: 16px 25px 16px 25px;
+    line-height: 18px;
+    font-weight: 400px;
+    padding: 16px 25px 16px 25px;
 }
 
 .footer__email-button {
     width: 100%;
-    background-color: rgb(200, 105, 58);
+    background-color: var(--brand-color);
     color: var(--color-light);
     text-align: center;
     line-height: 15px;
@@ -58,34 +60,30 @@
     margin-top: 24px;
 }
 
-
-
-   
-    
-
-.footer__block-label{
-    color:var(--brand-color);
-    font-family: "Great Vibes", cursive;
+.footer__info-top-label{
+    color: var(--brand-color);
+    font-family: var(--great-vibes-font);
     font-size: 28px;
 }
 
-.footer__block-title,.footer__block-text{
+.footer__info-top-title,.footer__info-top-text{
     color: var(--color-light);
 }
-.footer__block-title{
+
+.footer__info-top-title{
     font-size: 32px;
     font-family: var(--index-history-header-font);
     margin-top: 20px;
 }
-.footer__block-text{
+
+.footer__info-top-text{
     font-family: var(--index-history-p-font);
     font-size: 16px;
     margin-top: 25px;
 }
 
-
 .footer__bottom {
-    background-color: rgb(19, 15, 14);
+    background-color: var(--background-color-footer-bottom);
     color: var(--color-light);
     font-family: var(--index-history-p-font);
     display: flex; 
@@ -97,8 +95,7 @@
     padding-right: 174px;
 }
 
-.footer__bottom-created,
-.footer__bottom-reserved {
+.footer__bottom-created, .footer__bottom-reserved {
     margin: 0;
 }
 
