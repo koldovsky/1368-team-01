@@ -1,9 +1,31 @@
 .footer {
     width: 100%;
 }
-
 .footer__block, .footer__column {
     background-color: var(--background-color-footer);
+}
+
+.footer__block{
+    padding-left: 174px;
+    padding-right: 174px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer__block-info{
+    flex:1;
+    margin: 0 10px;
+
+}
+.footer__block-info-label{
+    color:var(--brand-color);
+    font-family: "Great Vibes", cursive;
+    font-size: 28px;
+}
+.footer__block-info-title,.footer__block-info-text{
+    color: var(--color-light);
 }
 
 .footer__bottom {
