@@ -9,13 +9,15 @@
 
 .hero__content-inner {
     padding-top: 322px;
-    padding-left: 674px;
+    /*padding-top: 21.3%;*/
+    /*padding-left: 674px;*/
+    padding-left: 44.3%;
 }
 
 .hero__content-subtitle {
     font-size: 28px;
     color: var(--brand-color);
-    font-family: var(--great-vibes-font);
+    font-family: var(--accent-font);
     font-weight: 400;
     font-style: normal;
     padding-bottom: 15px;
@@ -24,7 +26,7 @@
 .hero__content-title {
     font-size: 84px;
     color: var(--color-light);
-    font-family: var(--prata-font);
+    font-family: var(--secondary-font);
     font-weight: 400;
     font-style: normal;
     padding-bottom: 34px;
@@ -37,12 +39,10 @@
 .hero__content-description {
     font-size: 18px;
     color: var(--color-light);
-    font-family: var(--rubik-font);
-    padding-bottom: 44px;
+    padding-bottom: 47px;
 }
 
 .button {
-    font-family: var(--rubik-font);
     font-size: 16.5px;
     text-decoration: none;
     border-radius: var(--btn-border-radius);

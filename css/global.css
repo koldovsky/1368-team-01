@@ -12,12 +12,12 @@
 }
 
 :root {
+  font-family: "Rubik", sans-serif; /*primary font*/
+  --secondary-font: "Prata", serif;
+  --accent-font: "Great Vibes", cursive;
   --index-history-p-font: "Rubik", sans-serif;
   --index-history-header-font: "Prata", serif;
   --index-history-font-color: #898082;
-  --prata-font: "Prata", serif;
-  --great-vibes-font: "Great Vibes", cursive;
-  --rubik-font: "Rubik", sans-serif;
   --font-color-seconday: #c8693a;
   --color-light: rgb(255, 255, 255);
   --brand-color: rgb(200, 105, 58);
@@ -33,4 +33,9 @@
 .container {
   max-width: 1200px;
   margin: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
