@@ -10,8 +10,9 @@
 }
 h2 {
   color: var(--brand-color);
-  font-family: var(--prata-font);
-  font-size: 48px;
+  font-family: var(--great-vibes-font);
+  font-size: 28px;
+  font-weight: 100;
 }
 
 h3 {
@@ -38,10 +39,10 @@ a {
   gap: 20px;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 120px 0 60px;
 }
 
-.natural__cards__card {
+.natural__cards-card {
   flex: 1;
   background-size: cover;
   background-position: center;
@@ -51,55 +52,67 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 400px;
+  min-height: 470px;
+  max-width: 370px;
   position: relative;
   overflow: hidden;
 }
-.natural__cards__card * {
+.natural__cards-card * {
   position: relative;
   z-index: 1;
 }
-.natural__cards__card-1 {
+.natural__cards-card-1 {
   background-image: url(../img/natural_card-1.jpeg);
 }
-.natural__cards__card-2 {
+.natural__cards-card-2 {
   background-image: url(../img/natural_card-2.jpeg);
 }
-.natural__cards__card-3 {
+.natural__cards-card-3 {
   background-image: url(../img/natural_card-3.jpeg);
 }
 
-.natural__special__title p {
+.natural__special {
+  padding: 50px 0 100px;
+}
+
+.natural__special-title {
+  padding-bottom: 42px;
+}
+.natural__special-title p:first-of-type {
+  font-family: var(--prata-font);
   font-size: 48px;
+}
+.natural__special-title p {
   color: var(--color-light);
-  margin: 16px 0;
+  margin: 24px 0;
 }
 
-.natural__special__cards {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.natural__special-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
   gap: 20px;
-  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.natural__special__image {
+.natural__special-block {
   width: 100%;
-  max-width: 400px;
+  max-width: 370px;
+  max-height: 555px;
   justify-self: center;
 }
-
-
-.natural__special__cards__card {
+.natural__special__cards-card {
   padding: 24px;
   text-align: left;
 }
 
 @media (max-width: 768px) {
-  .natural__cards__card {
+  .natural__cards-card {
     flex-direction: column;
     align-items: center;
   }
-  .natural__cards__card {
+  .natural__cards-card {
     width: 100%;
     min-height: 300px;
     padding: 32px;
