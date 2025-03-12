@@ -6,53 +6,77 @@
 .awards__label {
     font-size: 21px;
     color: var(--brand-color);
-    font-family: "Prata", serif;
+    font-family: var(--accent-font);
     font-weight: 400;
+    text-align: center;
+    padding: 10px;
 }
 
-.awards__title,
-.awards__label,
-.awards__description,
-.awards__list-title,
+.awards__title {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 48px;
+    font-family: var(--secondary-font);
+}
+
+.awards__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 654px;
+    margin: auto;
+}
+
+.awards__description {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Rubik, sans-serif;
+}
+
+.awards__list-title  {
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    font-family: Rubik, sans-serif;
+}
+
 .awards__list-year {
     color: white;
+    text-align: left;
+    font-size: 22px;
+    font-family: var(--secondary-font);
+    
 }
 
 .awards__list-description {
     color: #898082;
+    text-align: left;
 }
 
 .awards__list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    max-width: 1056px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .awards__list-item {
     display: grid;
-    grid-template-columns: 100px 200px 80px 1fr; /* Image | Title | Year | Description */
+    grid-template-columns: 100px 200px 80px 1fr; 
+    justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 10px 0;
-}
-
-.awards__list-img {
-    width: 100px;
-    height: auto;
-}
-
-.awards__list-title {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.awards__list-year {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -65,7 +89,7 @@
     }
 
     .awards__list-img {
-        width: 80px; 
+        width: 400px; 
     }
 
     .awards__list-title {
