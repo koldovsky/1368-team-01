@@ -82,6 +82,12 @@
     margin-top: 25px;
 }
 
+.footer__column-title{
+    color: var(--color-light);
+    font-family: var(--index-history-header-font);
+    font-size: 22px;
+}
+
 .footer__bottom {
     background-color: var(--background-color-footer-bottom);
     color: var(--color-light);
