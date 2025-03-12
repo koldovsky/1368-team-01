@@ -1,21 +1,18 @@
  .footer {
     width: 100%;
+    
 }
 
 .footer__info-top, .footer__column {
     background-color: var(--background-color-footer);
-
 }
 
 .footer__info-top{
-    
     display: flex;
     justify-content: space-between;
-   
     padding:110px 360px 15px 360px;
     flex-wrap: wrap;
     gap: 20px;
-    
 }
 
 .footer__info-left, .footer__info-right{
@@ -50,8 +47,6 @@
     box-sizing: border-box;
    
 }
-
-
 
 .footer__email-button {
     min-height: 41px;
@@ -91,6 +86,7 @@
     font-size: 16px;
     margin-top: 25px;
 }
+
 .footer__info-line{
     margin-top:50px ;
 }
@@ -102,9 +98,22 @@
     max-width: 100%;
     width: 1170px;
 
- 
 }
 
+.footer__container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: var(--background-color-footer);
+    
+}
+.footer__column{
+    display: flex;
+    flex-direction: column;
+}
 
 .footer__column-title{
     color: var(--color-light);
