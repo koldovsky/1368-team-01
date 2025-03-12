@@ -4,24 +4,22 @@
   text-align: center;
 }
 .natural__container {
-  max-width: 1400px;
   margin: 0 auto;
   padding: 60px 20px;
 }
 h2 {
   color: var(--brand-color);
-  font-family: var(--great-vibes-font);
+  font-family: var(--accent-font);
   font-size: 28px;
   font-weight: 100;
 }
 
 h3 {
-  font-family: var(--prata-font);
+  font-family: var(--secondary-font);
   font-size: 22px;
 }
 
 p {
-  font-family: var(--rubik-font);
   font-size: 16px;
   color: var(--index-history-font-color);
 }
@@ -37,7 +35,6 @@ a {
   justify-content: center;
   align-items: stretch;
   gap: 20px;
-  max-width: 1400px;
   margin: 0 auto;
   padding: 120px 0 60px;
 }
@@ -76,10 +73,14 @@ a {
 }
 
 .natural__special-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-bottom: 42px;
 }
 .natural__special-title p:first-of-type {
-  font-family: var(--prata-font);
+  font-family: var(--secondary-font);
   font-size: 48px;
 }
 .natural__special-title p {
