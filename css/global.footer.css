@@ -45,11 +45,13 @@
     border-radius: 2px;
     background-color: var(--background-color-footer-email);
     color: var(--color-light);
-    line-height: 18px;
     font-weight: 400px;
     padding: 16px 25px 16px 25px;
     box-sizing: border-box;
+   
 }
+
+
 
 .footer__email-button {
     min-height: 41px;
@@ -89,6 +91,20 @@
     font-size: 16px;
     margin-top: 25px;
 }
+.footer__info-line{
+    margin-top:50px ;
+}
+
+.footer__info-line hr {
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    max-width: 100%;
+    width: 1170px;
+
+ 
+}
+
 
 .footer__column-title{
     color: var(--color-light);
