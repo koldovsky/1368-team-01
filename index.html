@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,14 +15,21 @@
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
   </head>
-
   <body>
     <!--start Alisa Korniienko-->
     <header class="header">
-      <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
-      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-hero.partial.html"></div>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-hero.partial.html"
+      ></div>
     </header>
     <!--end Alisa Korniienko-->
     <main>
@@ -43,10 +50,17 @@
       <!--start Marian Hrychak section -->
       <section
         data-hx-trigger="load"
-        data-hx-swap="outerHTML" 
+        data-hx-swap="outerHTML"
         data-hx-get="index.section-best-deals.partial.html>"
       ></section>
       <!-- end Marian Hrychak -->
+      <!-- History block (Number 6) - Anton. -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-history.partial.html"
+      ></section>
+      <!-- end Anton Koluh section -->
       <!-- start Alexsandra Bahlai section -->
       <section
         data-hx-trigger="load"
@@ -54,24 +68,18 @@
         data-hx-get="index.main-about.partial.html"
       ></section>
       <!-- end Alexsandra Bahlai section -->
-      <!-- History block (Number 6) - Anton. -->
+      <!--start Iryna Gnatenko https://trello.com/c/7A048Iif/8-8-shop-->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.main-history.partial.html"
-      ></section>
-      <!--start Iryna Gnatenko https://trello.com/c/7A048Iif/8-8-shop-->
-      <section
-              data-hx-trigger="load"
-              data-hx-swap="outerHTML"
-              data-hx-get="index.main-shop.partial.html"
+        data-hx-get="index.main-shop.partial.html"
       ></section>
       <!--end Iryna Gnatenko https://trello.com/c/7A048Iif/8-8-shop-->
       <!--start Iryna Gnatenko https://trello.com/c/2J4nXpvg/9-9-video-->
       <section
-              data-hx-trigger="load"
-              data-hx-swap="outerHTML"
-              data-hx-get="index.main-video.partial.html"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-video.partial.html"
       ></section>
       <!--end Iryna Gnatenko https://trello.com/c/2J4nXpvg/9-9-video-->
       <!--start Mariia Kochetkova https://trello.com/c/aqzF1Xo4/10-10-categories-->
@@ -101,7 +109,7 @@
       ></section>
       <!--end Olena Budko-->
     </main>
-       <!-- start Alexsandra Bahlai section -->
+    <!-- start Alexsandra Bahlai section -->
     <footer>
       <nav
         data-hx-trigger="load"
