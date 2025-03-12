@@ -1,14 +1,58 @@
-.about-us{
+.about-us {
     background-size: cover;
     background-image: url("../img/about-us_background.jpg");
     width: 100%;
     height: 900px;
     background-position: center;
+    display: flex;
+    padding: 0 360px; 
+    justify-content: space-between;
+    gap: 20px;
+
+    
 }
 
-.about-us__label{
+.empty-column {
+    width: 570px;
+    margin-left: 15px;
+    margin-right: 15px;
+   
+}
+
+.about-us__info {
+    padding: 100px 0;
+    flex: 2;
+}
+
+.about-us__label {
     color: var(--brand-color);
     font-family: var(--accent-font);
-    
+}
 
+.about-us__title {
+    color: var(--color-light);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    max-width: 100%;
+}
+
+.about-us__description {
+    color: var(--color-light);
+    font-family: var(--index-history-p-font);
+}
+
+.about-us__label-red, .about-us__label-white {
+    color: var(--color-light);
+    font-family: var(--secondary-font);
+}
+
+.about-us__list-red-item, .about-us__list-white-item {
+    color: var(--index-history-font-color);
+    font-family: var(--index-history-p-font);
+}
+
+ul li .about-us__list-red::before {
+    content: "- "; 
+    font-size: 12.23px; 
+    color: var(--brand-color); 
 }
