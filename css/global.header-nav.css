@@ -26,7 +26,7 @@
 
 .header__menu-link {
     color: var(--color-light);
-    font-size: 14px;
+    font-size: 0.875rem; /*14px*/
     letter-spacing: 0.2px;
     text-decoration: none;
 }
