@@ -61,12 +61,11 @@
         
     }
 
-    ul li .about-us__list-red::before {
-        content: "- "; 
-        font-size: 12.23px; 
-        color: var(--brand-color); 
+    .about-us__list-red,
+    .about-us__list-white {
+        list-style: none; 
+        padding-left: 0; 
     }
-
 
 
 @media (max-width: 990px){
