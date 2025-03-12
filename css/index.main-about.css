@@ -2,12 +2,11 @@
     .about-us {
         background-size: cover;
         background-image: url("../img/about-us_background.jpg");
-        
         min-width: 320px;
         min-height: 900px;
         background-position: center;
         display: grid;
-        grid-template-columns: 1fr 570px; 
+        grid-template-columns: 1fr 1fr; 
         gap: 20px;
         padding: 0 360px; 
         transition: background-position 0.5s ease;
@@ -41,6 +40,7 @@
         color: var(--color-light);
         font-family: var(--index-history-p-font);
         margin-top: 20px;
+        font-size: 18px;
     }
 
     .about-us__lists , .about-us__list{
@@ -51,11 +51,13 @@
         color: var(--color-light);
         font-family: var(--secondary-font);
         margin-top: 20px;
+        font-size: 18px;
     }
 
     .about-us__list-red-item, .about-us__list-white-item {
         color: var(--index-history-font-color);
         font-family: var(--index-history-p-font);
+        font-size: 16px;
         
     }
 
@@ -68,6 +70,12 @@
 
 
 @media (max-width: 990px){
+    .about-us{
+        padding: 0 10%;
+        background-position: right ;
+        min-width: 320px;
+
+    }
     .about-us__label {
         font-size: 21px;
     }
@@ -79,6 +87,11 @@
 }
 
 @media (max-width: 767px){
+    .about-us{
+        background-position: right;
+        min-width: 320px;
+    }
+
     .about-us__label {
         font-size: 14px;
     }
