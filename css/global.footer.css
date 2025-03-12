@@ -108,6 +108,7 @@
     padding: 40px;
     margin: 0 auto;
     background-color: var(--background-color-footer);
+    flex-wrap: wrap;
     
 }
 .footer__column{
@@ -166,5 +167,11 @@
     .footer__info-top-title{
         font-size: 28px;
     }
+    
+    .footer__container {
+        grid-template-columns: 1fr; /* Все колонки в одну */
+        padding: 20px;
+    }
 
 }
+
