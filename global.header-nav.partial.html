@@ -55,4 +55,14 @@
             </a>
         </li>
     </ul>
+
+    <div class="header__burger">
+        <span class="header__burger-icon"></span>
+    </div>
 </nav>
+<script>
+    document.querySelector(".header__burger").addEventListener("click", function() {
+        this.classList.toggle("active");
+        document.querySelector(".header__menu").classList.toggle("open");
+    });
+  </script>
