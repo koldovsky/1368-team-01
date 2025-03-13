@@ -39,10 +39,12 @@
         background-color: var(--mobile-background-color-nav);
         animation: burgerAnimation 0.4s;
         row-gap: 30px;
+        order: 1;
 
         .header__menu-link {
             color: var(--color-light);
-            font-size: 0.875rem; /*14px*/
+            font-size: 1rem;
+            font-weight: 500;
             letter-spacing: 0.2px;
             text-decoration: none;
             white-space: nowrap;
@@ -50,11 +52,20 @@
     }
 
     .header__socials {
-        flex: 0.5;
         list-style: none;
         display: none;
-        grid-gap: 15px;
-    
+        flex-direction: row;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        left: 0;
+        z-index: 100;
+        overflow-y: auto;
+        animation: burgerAnimation 0.4s;
+        column-gap: 30px;
+        order: 2;
+        padding-top: 704px;
+
         .header__menu-link svg:hover {
             all: initial; /* reset css*/
             path {

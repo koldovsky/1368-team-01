@@ -3,7 +3,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-position: center;
-    width: 100vw;
+    /*width: 100vw;*/
     min-height: 840px;
 }
 
@@ -44,6 +44,8 @@
     font-size: 1.031rem; /*16.5px*/
     text-decoration: none;
     border-radius: var(--btn-border-radius);
+    border-width: 3px;
+    border-style: solid;
     line-height: 1;
     font-weight: 700;
     word-break: break-word;
@@ -59,8 +61,6 @@
     color: var(--color-light);
     margin-right: 14px;
     border-color: var(--brand-color);
-    border-width: 2px;
-    border-style: solid;
 }
 
 .hero__content-buttons .button.button--primary:hover {
@@ -71,9 +71,7 @@
 
 .hero__content-buttons .button.button--secondary {
     color: var(--color-light);
-    border-width: 2px;
     border-color: var(--color-light);
-    border-style: solid;
 }
 
 .hero__content-buttons .button.button--secondary:hover {
