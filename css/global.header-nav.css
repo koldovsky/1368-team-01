@@ -147,12 +147,7 @@
     .header__nav {
         background: rgba(0, 0, 0, 0.5);
         padding: 0;
-        padding-left: 11.4%; /*174px*/
-        justify-content: unset;
-        
-        .header__logo-container {
-            padding-right: 36.3%; /*494px*/
-        }
+        justify-content: space-around;
         
         .header__menu {
             display: flex;
