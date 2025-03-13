@@ -10,13 +10,13 @@
     gap: 30px;
     max-width: 1190px;
     margin: 0 auto;
-    padding: 50px 15px; /* Оставляем только нужные отступы */
+    padding: 50px 15px; 
 }
 
 .footer__info-left, .footer__info-right {
     flex: 1;
     min-width: 300px; 
-    max-width: 50%; /* Ограничиваем до половины ширины */
+    max-width: 50%; 
     padding: 0 15px;
 }
 
@@ -87,7 +87,6 @@
     border: 1px solid var(--color-light);
 }
 
-
 .footer__email-input {
     font-size: 15px;
     height: 45px;
@@ -97,10 +96,9 @@
     background-color: var(--background-color-footer-email);
     color: var(--color-light);
     padding: 10px 20px;
-    border: 1px solid var(--color-light);
+    border: 1px solid var(--background-color-footer-email);
     box-sizing: border-box;
 }
-
 
 .footer__email-button {
     height: 45px;
@@ -122,9 +120,6 @@
     background-color: var(--color-light);
     color: var(--brand-color);
 }
-
-
-
 
 .footer__bottom {
     background-color: var(--background-color-footer-bottom);
@@ -155,14 +150,13 @@
 
 
 
-/* Для ширины 990px */
 @media (max-width: 990px) {
     .footer {
         padding: 80px 50px 15px 50px;
     }
 
     .footer__container {
-        grid-template-columns: repeat(2, 1fr); /* Две колонки */
+        grid-template-columns: repeat(4, 1fr); 
         gap: 30px;
     }
 
