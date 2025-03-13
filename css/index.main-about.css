@@ -1,124 +1,133 @@
+.about-us {
+    background-size: cover;
+    background-image: url("../img/about-us_background.jpg");
+    min-width: 320px;
+    min-height: 900px;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две равные колонки */
+    gap: 20px;
+    padding: 0 10%; 
+    background-repeat: no-repeat;
+}
 
+/* Левая пустая колонка */
+.empty-column {
+    background-image: url("../img/global/grapes.jpg"); /* Можно поставить фоновое изображение */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Правая колонка с контентом */
+.about-us__info {
+    padding: 100px 0;
+    grid-column: 2;
+}
+
+/* Заголовки и текст */
+.about-us__label {
+    color: var(--brand-color);
+    font-family: var(--accent-font);
+    font-size: 28px;
+}
+
+.about-us__title {
+    color: var(--color-light);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+.about-us__crafted-img {
+    margin-top: 25px;
+}
+
+.about-us__description {
+    color: var(--color-light);
+    font-family: var(--index-history-p-font);
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Разделяем на две колонки */
+.about-us__lists {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+/* Делаем списки вертикальными */
+.about-us__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Заголовки внутри списков */
+.about-us__label-red, .about-us__label-white {
+    color: var(--color-light);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Убираем стандартные маркеры списка */
+.about-us__list-red,
+.about-us__list-white {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+}
+
+.about-us__list-red-item, .about-us__list-white-item {
+    color: var(--index-history-font-color);
+    font-family: var(--index-history-p-font);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Адаптивность: на мобильных всё в одну колонку */
+@media (max-width: 990px) {
     .about-us {
-        background-size: cover;
-        background-image: url("../img/about-us_background.jpg");
-        min-width: 320px;
-        min-height: 900px;
-        background-position: center;
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        gap: 20px;
-        padding: 0 360px; 
-        transition: background-position 0.5s ease;
-        background-repeat: no-repeat;
-    }
-
-    .about-us__info {
-        padding: 100px 0;
-        grid-column: 2; 
-    }
-
-    .about-us__label {
-        color: var(--brand-color);
-        font-family: var(--accent-font);
-        font-size: 28px;
-    }
-
-    .about-us__title {
-        color: var(--color-light);
-        font-family: var(--secondary-font);
-        font-weight: 400;
-        max-width: 100%;
-        margin-top:20px ;
-        font-size: 48px;
-    }
-    .about-us__crafted-img{
-        margin-top: 25px;
-        font-size: 16px;
-    }
-    .about-us__description {
-        color: var(--color-light);
-        font-family: var(--index-history-p-font);
-        margin-top: 20px;
-        font-size: 18px;
-    }
-
-    .about-us__lists , .about-us__list{
-        margin-top: 25px;
-    }
-    
-    .about-us__label-red, .about-us__label-white {
-        color: var(--color-light);
-        font-family: var(--secondary-font);
-        margin-top: 20px;
-        font-size: 18px;
-    }
-
-    .about-us__list-red-item, .about-us__list-white-item {
-        color: var(--index-history-font-color);
-        font-family: var(--index-history-p-font);
-        font-size: 16px;
+        grid-template-columns: 1fr;
+        padding: 0 10%;
+        background-position: right;
         
     }
 
-    ul li .about-us__list-red::before {
-        content: "- "; 
-        font-size: 12.23px; 
-        color: var(--brand-color); 
-    }
-
-
-
-@media (max-width: 990px){
-    .about-us{
-        padding: 0 10%;
-        background-position: right ;
-        min-width: 320px;
-
-    }
-    .about-us__label {
-        font-size: 21px;
-    }
-    .about-us__title {
-        font-size: 41px;
-    }
-
- 
-}
-
-@media (max-width: 767px){
-    .about-us{
-        background-position: right;
-        min-width: 320px;
-    }
-
-    .about-us__label {
-        font-size: 14px;
-    }
-
-    .about-us__title {
-        font-size: 34px; 
-    }
-   
-
-    .about-us__description {
-        font-size: 14px; 
-    }
-
-    .about-us__label {
-        font-size: 16px; 
-    }
-
     .empty-column {
-        width: 100%; 
-        margin: 0; 
+        display: none; /* Скрываем пустую колонку на маленьких экранах */
     }
 
     .about-us__info {
-        grid-column: 1; 
-        padding: 30px 0; 
+        grid-column: 1;
+        padding: 50px 0;
+        margin-left: 50px;
+        
     }
 
+    .about-us__lists {
+        flex-direction: column; /* Переводит списки в один столбец */
+        gap: 20px;
+    }
 }
 
+@media (max-width: 350px) {
+    .about-us__label {
+        font-size: 16px;
+    }
+
+    .about-us__title {
+        font-size: 34px;
+    }
+
+    .about-us__description {
+        font-size: 14px;
+    }
+}
 
