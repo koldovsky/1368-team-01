@@ -3,19 +3,17 @@
     background-color: rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     min-height: 840px;
 }
 
 .hero__content-inner {
-    padding-top: 322px;
-    /*padding-top: 21.3%;*/
-    /*padding-left: 674px;*/
-    padding-left: 44.3%;
+    padding-top: 214px;
+    padding: 244px 24px 0 24px;
 }
 
 .hero__content-subtitle {
-    font-size: 1.75rem; /*28px*/
+    font-size: 0.875rem; /*14px*/
     color: var(--brand-color);
     font-family: var(--accent-font);
     font-weight: 400;
@@ -24,7 +22,7 @@
 }
 
 .hero__content-title {
-    font-size: 5.25rem; /*84px*/
+    font-size: 3.625rem; /*58px*/
     color: var(--color-light);
     font-family: var(--secondary-font);
     font-weight: 400;
@@ -53,6 +51,7 @@
     max-width: 100%;
     display: inline-block;
     padding: 14px 25px;
+    margin: 10px;
 }
 
 .hero__content-buttons .button.button--primary {
