@@ -1,0 +1,12 @@
+.discounts__title {
+  color: var(--color-light);
+  font-family: var(--index-history-header-font);
+}
+
+.discounts__description {
+  color: var(--color-light);
+}
+
+.discounts__card {
+  background-color: var(--brand-color);
+}

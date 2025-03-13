@@ -6,5 +6,7 @@
 @import "index.main-history.css";
 @import "index.main-about.css";
 @import "index.main-awards.css";
+@import "index.categories.css";
+@import "index.sections-discounts.css";
 @import "index.faq.css";
-@import "global.footer.css";
+@import "global.footer.css"
