@@ -1,55 +1,29 @@
 <!--Mariia Kochetkova-->
 <div class="categories">
-  <div
-    class="categories__card"
-    style="
-      background-image: url(&quot;img/red-wines.jpg&quot;);
-      width: 589;
-      height: 374;
-      background-size: contain;
-      display: inline-block;
-    "
-  >
-    <p class="categories__title">Red Wines</p>
-    <svg
-      class="categories__background"
-      width="3000px"
-      height="32"
-      style="width: 10%"
-    >
-      <use href="img/global/short-divider.svg#short-divider"></use>
-    </svg>
-    <p class="categories__description">
-      Great selection of red wines for you.
-    </p>
-    <a class="categories__button" href="#" class="button"
-      >Shop red wines</a
-    >
-  </div>
-  <div
-    class="categories__card"
-    style="
-      background-image: url(&quot;img/white-wines.jpg&quot;);
-      width: 589;
-      height: 374;
-      background-size: contain;
-      display: inline-block;
-    "
-  >
-    <p class="categories__title">White Wines</p>
-    <svg
-      class="categories__background"
-      width="3000px"
-      height="32"
-      style="width: 10%"
-    >
-      <use href="img/global/short-divider.svg#short-divider"></use>
-    </svg>
-    <p class="categories__description">
-      Top white wines for any occasion.
-    </p>
-    <a class="categories__button" href="#" class="button"
-      >Shop white wines</a
-    >
+  <div class="categories__container container">
+    <div class="categories__cards">
+      <div class="categories__card categories__red">
+        <p class="categories__title">Red Wines</p>
+        <svg class="categories__divider">
+          <use href="img/global/short-divider.svg#short-divider"></use>
+        </svg>
+        <p class="categories__description">
+          Great selection of red wines for you.
+        </p>
+        <a class="categories__button" href="#shop" class="button"
+          >Shop red wines</a
+        >
+      </div>
+      <div class="categories__card categories__white">
+        <p class="categories__title">White Wines</p>
+        <svg class="categories__divider">
+          <use href="img/global/short-divider.svg#short-divider"></use>
+        </svg>
+        <p class="categories__description">Top white wines for any occasion.</p>
+        <a class="categories__button" href="#shop" class="button"
+          >Shop white wines</a
+        >
+      </div>
+    </div>
   </div>
 </div>

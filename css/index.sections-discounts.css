@@ -1,12 +1,37 @@
-.discounts__title {
-  color: var(--color-light);
-  font-family: var(--index-history-header-font);
-}
+.discounts {
+  text-align: left;
+  background-color: var(--background-color-dark);
 
-.discounts__description {
-  color: var(--color-light);
-}
+  .discounts__card {
+    padding: 50px;
+    background-color: var(--brand-color);
+    background-image: url("../img/personal-discounts.png");
+    height: 374;
+    width: 1178;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: left;
+    flex-direction: column;
 
-.discounts__card {
-  background-color: var(--brand-color);
+    .discounts__title {
+      color: var(--color-light);
+      font-family: var(--index-history-header-font);
+      font-size: 2.125rem !important;
+    }
+
+    .discounts__description {
+      color: var(--color-light);
+      font-size: 1.125rem !important;
+    }
+
+    .discounts__button {
+      .discounts__button--text {
+        font-size: 1.03125rem !important;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
 }
