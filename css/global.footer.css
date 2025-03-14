@@ -10,16 +10,22 @@
     gap: 30px;
     max-width: 1190px;
     margin: 0 auto;
-    padding: 50px 15px; 
+    padding-top: 110px ; 
+    padding-bottom: 15px ;
 }
 
 .footer__info-left, .footer__info-right {
     flex: 1;
-    min-width: 300px; 
-    max-width: 50%; 
     padding: 0 15px;
 }
 
+.footer__info-left{
+    max-width: 770px;
+}
+.footer__info-right{
+    max-width: 370px;
+    
+}
 
 .footer__info-top-label {
     color: var(--brand-color);
@@ -41,7 +47,6 @@
     color: var(--color-light);
 }
 
-
 .footer__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -52,7 +57,7 @@
 
 .footer__column {
     min-width: 200px;
-    margin: 60px 15px;
+    margin:  60px 15px;
 }
 
 .footer__column-title {
@@ -61,11 +66,14 @@
     color: var(--color-light);
 }
 
-
-
 .footer__links, .footer__icons{
     list-style: none;
 }
+
+.footer__column{
+    padding: 0 15px;
+}
+
 
 .footer__link-item a{
     color:var(--footer-color-text) ;
@@ -75,16 +83,14 @@
     font-style: normal;
 }
 
-.footer__info-line {
-    margin-top: 40px;
-    text-align: center;
+.footer__link-item:not(:first-child) {
+    margin-top: 20px;
 }
 
-.footer__info-line hr {
-    width: 80%;
-    max-width: 1170px;
-    margin: 0 auto;
-    border: 1px solid var(--color-light);
+.footer__icons{
+    margin-top: 30px;
+    display: flex;
+    column-gap: 15px;
 }
 
 .footer__email-input {
@@ -121,6 +127,30 @@
     color: var(--brand-color);
 }
 
+.footer__info-top-line{
+    margin-top: 45px;
+}
+
+.footer__buttons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.footer__button-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer__button-item img {
+    width: 80px;
+    height: 78px;
+    object-fit: contain;
+}
+
 .footer__bottom {
     background-color: var(--background-color-footer-bottom);
     color: var(--color-light);
@@ -130,7 +160,7 @@
     align-items: center;
     padding: 0 20px;
     height: 62px;
-    width: 100vw; 
+    width: 100%; 
     position: relative;
     left: 0; 
 }
@@ -149,21 +179,92 @@
 }
 
 
-
-@media (max-width: 990px) {
+@media (max-width: 1080px) {
     .footer {
-        padding: 80px 50px 15px 50px;
+        padding: 40px 20px 15px 20px;
     }
 
     .footer__container {
         grid-template-columns: repeat(4, 1fr); 
-        gap: 30px;
+        gap: 1px;
+       
     }
 
     .footer__info-top {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    .footer__bottom-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+}
+@media (max-width: 768px) {
+    .footer__container {
+        grid-template-columns: repeat(1, 1fr); 
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .footer__buttons {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+   .footer__icons {
+        justify-content: center; /* Центрируем иконки */
+    }
+
+    .footer__icons li {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__bottom-container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+   
+}
+
+@media (max-width: 480px) {
+    .footer__container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .footer__buttons {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .footer__bottom-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .footer__column {
+        width: 100%;
+        max-width: 300px;
+    }
+    .footer__buttons {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .footer__bottom-container {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__bottom-container {
+        width: 100%;
     }
 
 }
