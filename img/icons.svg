@@ -1,0 +1,5 @@
+<!-- ...existing code... -->
+<symbol id="separator" xmlns="http://www.w3.org/2000/svg" width="3000px" height="32">
+    <path d="M0 16 L3000 16" style="fill:none;stroke:#c8693a;stroke-width:2px"></path>
+</symbol>
+<!-- ...existing code... -->
