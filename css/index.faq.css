@@ -18,7 +18,6 @@
         flex-wrap: wrap;
         margin: 0 -15px;
         justify-content: center;
-        gap: 1rem;
         flex-direction: row;
 
         @media (min-width: 768px) {
@@ -33,12 +32,15 @@
 
           @media (min-width: 768px) {
             max-width: 58.33%;
+            flex-basis: 58.33%;
           }
           @media (min-width: 992px) {
             max-width: 58.33%;
+            flex-basis: 58.33%;
           }
           @media (min-width: 1200px) {
             max-width: 58.33%;
+            flex-basis: 58.33%;
           }
 
           .faq__label {
@@ -100,24 +102,34 @@
               .faq__accordion-header {
                 display: flex;
                 align-items: center;
+                width: 100%;
 
                 .faq__accordion-header-text {
-                  display: block;
+                  display: flex;
+                  flex: 1;
                   color: var(--color-light);
                   font-family: "Prata", serif;
                   font-size: 22px;
                   letter-spacing: -0.44px;
-                  line-height: 33px;
                   text-align: left;
+                  max-width: calc(100% - 15px - 20px);
                 }
                 .faq__accordion-icon {
-                  display: flex;
-                  flex-basis: 15px;
+                  display: block;
+                  position: relative;
                   margin-left: 20px;
-                  max-width: 15px;
+                  width: 15px;
                   height: 15px;
                   align-items: center;
-                  font-size: 24px;
+                }
+                .faq__accordion-icon::after {
+                  content: "";
+                  position: absolute;
+                  width: 100%;
+                  height: 2px;
+                  top: 50%;
+                  background-color: var(--color-light);
+                  transform: translateY(-50%, -50%);
                 }
               }
               .faq__accordion-content {
@@ -142,34 +154,33 @@
             height: 1px;
             background-color: var(--index-history-font-color);
           }
+        }
+        .faq__image-container {
+          display: flex;
+          flex-basis: 100%;
+          margin-top: 50px;
+          padding: 0 15px;
 
-          .faq__image-container {
-            display: flex;
-            flex-basis: 100%;
-            flex-direction: column;
-            margin-top: 50px;
-            padding: 0 15px;
-            position: relative;
-            justify-content: flex-start;
+          @media (min-width: 768px) {
+            max-width: 41.67%;
+            flex-basis: 41.67%;
+            margin-top: 0;
+          }
+          @media (min-width: 992px) {
+            max-width: 41.67%;
+            flex-basis: 41.67%;
+            margin-top: 0;
+          }
+          @media (min-width: 1200px) {
+            max-width: 41.67%;
+            flex-basis: 41.67%;
+            margin-top: 0;
 
             .faq__image {
-              /* display: block; */
+              display: block;
               height: auto;
               width: auto;
-
-              /* @media (min-width: 768px) {
-                max-width: 41.67%;
-              }
-              @media (min-width: 992px) {
-                max-width: 41.67%;
-              }
-              @media (min-width: 1200px) {
-                max-width: 41.67%;
-                .faq__image {
-                  display: block;
-                  font-stretch: 100%;
-                }
-              } */
+              max-width: 100%;
             }
           }
         }
