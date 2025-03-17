@@ -1,0 +1,166 @@
+.winehub {
+  background-color: var(--background-color-dark);
+  padding: 90px 0 60px;
+
+  @media (min-width: 992px) {
+    padding: 120px 0 60px;
+  }
+
+  .winehub__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 24px;
+
+    @media (min-width: 992px) {
+      padding: 0px 40px;
+    }
+
+    .winehub__selection {
+      display: grid;
+      gap: 30px;
+
+      .winehub__red {
+        background-image: url("../img/red-wines.jpg");
+      }
+
+      .winehub__white {
+        background-image: url("../img/white-wines.jpg");
+      }
+
+      .winehub__wine {
+        background-size: cover;
+        background-position: 20% 100%;
+        height: 400.4px;
+        @media (min-width: 992px) {
+          height: 424px;
+        }
+        .winehub__details {
+          padding: 90px 55px 0px 30px;
+
+          @media (min-width: 992px) {
+            padding: 110px 55px 0px 45px;
+          }
+
+          .winehub__title {
+            color: var(--color-light);
+            font-family: var(--index-history-header-font);
+            font-size: 1.75rem;
+          }
+
+          .winehub__description {
+            color: var(--color-light);
+            font-size: 1rem;
+            line-height: 1.5;
+          }
+
+          .winehub__divider--short {
+            height: 32px;
+            width: 20.6px;
+
+            @media (min-width: 768px) {
+              width: 45.5px;
+            }
+          }
+
+          .winehub__button {
+            color: var(--color-light);
+            text-decoration: none;
+            background-color: var(--brand-color);
+            margin-top: 40px;
+            border: 2px solid var(--brand-color);
+            font-size: 0.9375rem;
+            border-radius: var(--btn-border-radius);
+            font-weight: 700;
+            max-width: 100%;
+            display: inline-block;
+            padding: 14px 25px;
+          }
+
+          .winehub__button:hover {
+            background-color: var(--btn-hover-color);
+            border-color: var(--btn-hover-color);
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .winehub__discount {
+      margin: 30px 0px 0px 0px;
+      background-color: var(--brand-color);
+      background-size: cover;
+      background-position-x: 100%;
+      background-position-y: 50%;
+      height: 451.5px;
+
+      @media (min-width: 992px) {
+        width: 100%;
+        height: 336px;
+      }
+      
+      background-image: url("../img/personal-discounts.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      .winehub__discounts--inner {
+        padding: 55px 30px 0px 30px;
+
+        @media (min-width: 992px) {
+          padding: 65px 55px 0px 45px;
+        }
+
+        .winehub__discounts--title {
+          color: var(--color-light);
+          font-family: var(--index-history-header-font);
+          font-size: 2.125rem;
+        }
+
+        .winehub__divider {
+          height: 31px;
+          width: 72.93px;
+          @media (min-width: 992px) {
+            width: 316px;
+          }
+        }
+
+        .winehub__discounts--description {
+          color: var(--color-light);
+          font-size: 1.125rem;
+          line-height: 1.5;
+        }
+
+        .winehub__discounts--text {
+          color: var(--color-light);
+          text-decoration: none;
+          background-color: var(--brand-color);
+          margin-top: 40px;
+          border: 3px solid var(--color-light);
+          font-size: 0.9375rem;
+          border-radius: var(--btn-border-radius);
+          font-weight: 700;
+          max-width: 100%;
+          display: inline-block;
+          padding: 14px 25px;
+          vertical-align: middle;
+          font-weight: 700;
+        }
+
+        .winehub__discounts--text:hover {
+          background-color: var(--color-light);
+          color: #342e2e;
+        }
+
+        .winehub__discounts--icon {
+          height: 24px;
+          width: 24px;
+          fill: var(--color-light);
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
