@@ -66,7 +66,7 @@
         order: 2;
         padding-top: 704px;
 
-        .header__menu-link svg:hover {
+        .header__socials-link svg:hover {
             all: initial; /* reset css*/
             path {
                 fill: var(--brand-color);

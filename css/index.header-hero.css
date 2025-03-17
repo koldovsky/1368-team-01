@@ -58,7 +58,6 @@
 .hero__content-buttons .button.button--primary {
     background-color: var(--brand-color);
     color: var(--color-light);
-    /*margin-right: 14px;*/
     border-color: var(--brand-color);
 }
 
