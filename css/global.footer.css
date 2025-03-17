@@ -178,25 +178,17 @@
     margin: 0;
 }
 
+@media (max-width:1010px) {
 
-@media (max-width: 1080px) {
-    .footer {
-        padding: 40px 20px 15px 20px;
+    .footer__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
     }
-    .footer__info-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .footer__bottom-container {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-    }
-
 }
+
 
 @media (max-width: 797px) {
     .footer__buttons {
