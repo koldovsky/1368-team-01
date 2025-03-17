@@ -205,14 +205,14 @@
     }
 
    
-        .footer__buttons {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); 
-            grid-template-rows: repeat(3, auto); 
-            gap: 5px;
-            max-width: 300px;
-            margin: 0 auto;
-         }
+    .footer__buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, auto); 
+        gap: 5px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
     
 
     .footer__icons {
