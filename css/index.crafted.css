@@ -11,30 +11,48 @@
     height: 80%;
 
     .crafted__container {
-        padding: 100px 0;
+        padding: 100px 24px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        @media (min-width: 768px) {
+            padding: 100px 32px;
+        }
         @media (min-width: 992px) {
-            padding: 165px 0 175px;
+            padding: 165px 40px 175px;
+        }
+        @media (min-width: 1280px) {
+            padding: 165px 15px 175px;
         }
 
         .crafted__header {
             color: var(--brand-color);
             font-family: var(--accent-font);
-            font-size: 1.75rem;
+            font-size: 0.875rem;
             font-weight: 400;
             letter-spacing: normal;
             line-height: 1.8375;
             text-align: center;
+            @media (min-width: 768px) {
+                font-size: 1.3125rem;
+            }
+            @media (min-width: 992px) {
+                font-size: 1.75rem;
+            }
         }
         .crafted__text {
             margin: 20px 0 0 0;
             color: var(--color-light);
             font-family: var(--secondary-font);
-            font-size: 4.875rem;
+            font-size: 3.625rem;
             text-align: center;
+            @media (min-width: 768px) {
+                font-size: 4.4375rem;
+            }
+            @media (min-width: 992px) {
+                font-size: 5.25rem;
+            }
         }
         .crafted__img {
             margin: 35px 0 0 0;
