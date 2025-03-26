@@ -19,6 +19,7 @@
         margin: 0 -15px;
         justify-content: center;
         flex-direction: row;
+        align-items: center;
 
         @media (min-width: 768px) {
           flex-direction: row;
@@ -29,26 +30,19 @@
           flex-direction: column;
           display: flex;
           padding: 0 15px;
+          align-self: stretch;
+          justify-content: center; 
 
-          @media (min-width: 768px) {
-            max-width: 58.33%;
+          @media (min-width: 768px) {           
             flex-basis: 58.33%;
-          }
-          @media (min-width: 992px) {
-            max-width: 58.33%;
-            flex-basis: 58.33%;
-          }
-          @media (min-width: 1200px) {
-            max-width: 58.33%;
-            flex-basis: 58.33%;
-          }
+          }        
 
           .faq__label {
             display: block;
             color: var(--brand-color);
             font-size: 14px;
             text-align: left;
-            font-family: "Great Vibes", cursive;
+            font-family: var(--accent-font);
 
             @media (min-width: 768px) {
               font-size: 21px;
@@ -93,34 +87,42 @@
           .faq__accordion {
             display: block;
             margin-top: 20px;
+            justify-content: flex-start;
 
             .faq__accordion-item {
-              display: block;
-              position: relative;
+              /* display: block; */
+              position: relative; 
               padding: 20px 0;
+              cursor: pointer;
+              overflow: hidden;
+              width: 100%;
+              margin-top: 0px;
 
               .faq__accordion-header {
                 display: flex;
                 align-items: center;
                 width: 100%;
+                line-height: 25.6px;
 
                 .faq__accordion-header-text {
                   display: flex;
                   flex: 1;
                   color: var(--color-light);
-                  font-family: "Prata", serif;
+                  font-family: var(--secondary-font);
+                  font-feature-settings: normal;
                   font-size: 22px;
+                  font-weight: 400;
+                  line-height: 33px;
                   letter-spacing: -0.44px;
                   text-align: left;
                   max-width: calc(100% - 15px - 20px);
                 }
-                .faq__accordion-icon {
-                  display: block;
+                .faq__accordion-icon {                
                   position: relative;
                   margin-left: 20px;
                   width: 15px;
                   height: 15px;
-                  align-items: center;
+                  max-width: 15px;                 
                 }
                 .faq__accordion-icon::after {
                   content: "";
@@ -128,32 +130,54 @@
                   width: 100%;
                   height: 2px;
                   top: 50%;
+                  left: 0;
                   background-color: var(--color-light);
-                  transform: translateY(-50%, -50%);
+                  transition: background-color 0.2s ease;
+                  transform: translateY(-50%);
+                  border-radius: 3px;
                 }
+                .faq__accordion-icon::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: 50% ;
+                  width: 2px;
+                  height: 100%;
+                  background-color: var(--color-light);
+                  transform: translate(-50%, 0);;
+                  transition: transform 0.3s ease, opacity 0.3s ease;
+                  border-radius: 3px;
+                }
+               
               }
               .faq__accordion-content {
                 display: block;
-                margin-top: 20px;
+                margin-top: 0px;
                 color: var(--index-history-font-color);
-                font-family: "Rubik", sans-serif;
-                height: 77px;
+                font-family: "Rubik", sans-serif;              
                 font-size: 16px;
+                max-height: 0;
+                overflow: hidden;               
+                transition: margin-top 0.3s ease, max-height 0.4s ease;               
               }
+              
               .faq__accordion-content-text {
                 position: relative;
                 display: inline;
                 line-height: 25.6px;
-              }
+              }            
             }
-          }
-          .faq__accordion-item::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            background-color: var(--index-history-font-color);
-          }
+            .faq__accordion-item::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background-color: var(--index-history-font-color);
+              pointer-events: none;            
+           }  
+          }       
         }
         .faq__image-container {
           display: flex;
@@ -166,25 +190,25 @@
             flex-basis: 41.67%;
             margin-top: 0;
           }
-          @media (min-width: 992px) {
-            max-width: 41.67%;
-            flex-basis: 41.67%;
-            margin-top: 0;
+          
+          .faq__image {
+            display: block;
+            height: auto;
+            width: auto;
+            max-width: 100%;
           }
-          @media (min-width: 1200px) {
-            max-width: 41.67%;
-            flex-basis: 41.67%;
-            margin-top: 0;
-
-            .faq__image {
-              display: block;
-              height: auto;
-              width: auto;
-              max-width: 100%;
-            }
-          }
+          
         }
       }
     }
   }
+
 }
+.faq__accordion-item.active .faq__accordion-content {
+  margin-top: 20px !important;
+}
+
+.faq__accordion-item.active .faq__accordion-icon::before {
+  transform: translateX(-50%) scaleY(0); 
+  opacity: 0;
+} 

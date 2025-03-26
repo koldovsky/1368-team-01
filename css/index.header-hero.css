@@ -4,6 +4,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: left;
+    background-repeat: no-repeat;
     min-height: 946px;
 }
 
@@ -92,7 +93,7 @@
  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 @media (min-width:801px) {
     .hero__content-title {
-        font-size: 4,437rem; /*71px*/
+        font-size: 4.437rem; /*71px*/
         font-weight: 400;
     }
 }
