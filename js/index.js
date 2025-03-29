@@ -3,6 +3,7 @@ function init() {
     import('./index.popup.js');
     import('./index.faq.js');
     import('./index.natural.js');
+    import('./index.natural-countdown.js');
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
