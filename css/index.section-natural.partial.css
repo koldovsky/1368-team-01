@@ -1,3 +1,4 @@
+/** Olena Hrynyshyn */
 .natural {
   background-color: var(--background-color-dark);
   color: var(--color-light);
@@ -62,6 +63,24 @@
   background-image: url(../img/natural_card-3.jpeg);
 }
 
+.natural__cards-card p {
+  margin-bottom: 15px;
+}
+
+.natural__cards-more {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  gap: 10px;
+}
+.natural__cards-more a:hover {
+  color: var(--brand-color);
+}
+
+.natural__cards-more svg {
+  vertical-align: middle;
+}
+
 .natural__special {
   padding: 50px 0 100px;
 }
@@ -73,6 +92,7 @@
   flex-direction: column;
   padding-bottom: 42px;
 }
+
 .natural__special-title p:first-of-type {
   font-family: var(--secondary-font);
   font-size: 48px;
@@ -116,3 +136,4 @@
     align-items: start;
   }
 }
+
