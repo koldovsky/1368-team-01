@@ -1,14 +1,24 @@
-function showPopup() {
-    document.getElementById('openPopup').style.display = 'flex';
-    document.body.style.overflowY = 'hidden';
-}
-window.onload = showPopup();
+//Alisa Korniienko
+window.addEventListener('load', () => {
+    console.log('DOM fully loaded and parsed');
 
-document.getElementById('closePopup').addEventListener('click', function() {
-    document.getElementById('openPopup').style.display = 'none';
-    document.body.style.overflowY = 'auto';
-});
+    const popup = document.querySelector('div.popup__container');
+    const closeBtn = document.querySelector('a.close__popup');
+    const restrictionBtn = document.querySelector('a.restriction__button');
 
-document.getElementById('restrictionButton').addEventListener('click', function() {
-    window.location.href = 'index.access-denied.html';
+    if (popup) {
+        popup.classList.add('open__popup');
+        document.body.style.overflowY = 'hidden';
+    }
+
+    closeBtn?.addEventListener('click', (event) => {
+        event.preventDefault();
+        popup.classList.remove('open__popup');
+        document.body.style.overflowY = 'auto';
+    });
+
+    restrictionBtn?.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'index.access-denied.html';
+    });
 });
