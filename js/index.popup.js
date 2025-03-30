@@ -1,14 +1,12 @@
 //Alisa Korniienko
 window.addEventListener('load', () => {
-    console.log('DOM fully loaded and parsed');
-
     const popup = document.querySelector('div.popup__container');
     const closeBtn = document.querySelector('a.close__popup');
     const restrictionBtn = document.querySelector('a.restriction__button');
 
     if (popup) {
         popup.classList.add('open__popup');
-        document.body.style.overflowY = 'hidden';
+        //document.body.style.overflowY = 'hidden';
     }
 
     closeBtn?.addEventListener('click', (event) => {
