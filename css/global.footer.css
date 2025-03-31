@@ -178,6 +178,11 @@
     margin: 0;
 }
 
+.footer__link-item, .footer__link {
+    text-decoration: none;
+
+}
+
 @media (max-width:1010px) {
 
     .footer__container{
@@ -185,7 +190,7 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 5px;
         width: 100%; 
-        max-width: 1000px; 
+        max-width: 900px; 
         margin: 0 auto; 
         padding: 0 10px; 
         box-sizing: border-box; 
