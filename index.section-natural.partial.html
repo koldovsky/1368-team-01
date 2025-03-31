@@ -1,5 +1,5 @@
- <!-- Olena Hrynyshyn section -->
-  <section class="natural">
+<!-- Olena Hrynyshyn section -->
+<section class="natural">
   <div class="natural__cards container">
     <article class="natural__cards-card natural__cards-card-1">
       <h3>For Your Special Events</h3>
@@ -8,10 +8,12 @@
       </svg>
       <p>We have a great collection of exclusive reserve wines.</p>
       <div class="natural__cards-more">
-        <a href="#">Learn more</a>
-        <svg style="width: 20px; height: 20px; fill: currentColor">
-          <use href="img/global/right-arrow.svg#right-arrow"></use>
-        </svg>
+        <a href="#shop"
+          >Learn more
+          <svg style="width: 20px; height: 20px; fill: currentColor">
+            <use href="img/global/right-arrow.svg#right-arrow"></use>
+          </svg>
+        </a>
       </div>
     </article>
     <article class="natural__cards-card natural__cards-card-2">
@@ -21,10 +23,12 @@
       </svg>
       <p>Only natural wine without all kinds of additives or flavors.</p>
       <div class="natural__cards-more">
-        <a href="#">Learn more</a>
-        <svg style="width: 20px; height: 20px; fill: currentColor">
-          <use href="img/global/right-arrow.svg#right-arrow"></use>
-        </svg>
+        <a href="#shop"
+          >Learn more
+          <svg style="width: 20px; height: 20px; fill: currentColor">
+            <use href="img/global/right-arrow.svg#right-arrow"></use>
+          </svg>
+        </a>
       </div>
     </article>
     <article class="natural__cards-card natural__cards-card-3">
@@ -36,23 +40,29 @@
         We produce and sell the finest wines made of the best grape varieties.
       </p>
       <div class="natural__cards-more">
-        <a href="#">Learn more</a>
-        <svg style="width: 20px; height: 20px; fill: currentColor">
-          <use href="img/global/right-arrow.svg#right-arrow"></use>
-        </svg>
+        <a href="#shop"
+          >Learn more
+          <svg style="width: 20px; height: 20px; fill: currentColor">
+            <use href="img/global/right-arrow.svg#right-arrow"></use>
+          </svg>
+        </a>
       </div>
     </article>
   </div>
 
   <div class="natural__special container">
     <div class="natural__special-title">
-      <h2>100% natural</h2>
+      <h2 id="titleAnim">100% natural</h2>
       <p>What Makes Our Wines Special</p>
       <img src="img/global/winery-separator.svg" alt="Separator" />
       <p>We use only 100% natural grapes, no impurities.</p>
     </div>
     <div class="natural__special-cards">
-      <img class="natural__special-block" src="img/natural_bottle.png" alt="Bottle of wine" />
+      <img
+        class="natural__special-block"
+        src="img/natural_bottle.png"
+        alt="Bottle of wine"
+      />
       <div class="natural__special-block">
         <article class="natural__special__cards-card">
           <h3>Amazing Taste</h3>
@@ -135,5 +145,33 @@
         </article>
       </div>
     </div>
+  </div>
+  <div class="natural__countdown container">
+    <div id="year" class="year"></div>
+    <h3>Promotion End Time</h3>
+    <div id="countdown" class="countdown">
+      <div class="natural__countdoun-time">
+        <h4 id="days">00</h4>
+        <small>days</small>
+      </div>
+      <div class="natural__countdoun-time">
+        <h4 id="hours">00</h4>
+        <small>hours</small>
+      </div>
+      <div class="natural__countdoun-time">
+        <h4 id="minutes">00</h4>
+        <small>minutes</small>
+      </div>
+      <div class="natural__countdoun-time">
+        <h4 id="seconds">00</h4>
+        <small>seconds</small>
+      </div>
+    </div>
+    <img
+      src="img/global/spinner.gif"
+      alt="Loading..."
+      id="loading"
+      class="loading"
+    />
   </div>
 </section>

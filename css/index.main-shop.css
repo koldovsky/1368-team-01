@@ -1,0 +1,120 @@
+.shop {
+  background-color: var(--background-color-dark);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.shop__title__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.shop__title {
+  color: var(--brand-color);
+  font-family: var(--accent-font), serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.shop__subtitle {
+  color: var(--color-light);
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.shop__subtitle__p {
+  color: var(--color-light);
+}
+
+/*.shop__items {
+  display: grid;
+  gap: 15px;
+}*/
+.shop__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card__title{
+  font-family: "Rubik", sans-serif; /*primary font*/
+  color: var(--color-light);
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 8px;
+}
+
+.product-card__price {
+  font-family: "Rubik", sans-serif; /*primary font*/
+  color: var(--color-light);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.product-card__button {
+  margin: 24px 0;
+  padding: 11px 23px;
+  display: inline-block;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: var(--btn-border-radius);
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+  color: var(--color-light);
+  font-family: "Rubik", sans-serif; /*primary font*/
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+
+  &:hover {
+    background-color: var(--btn-hover-color);
+    border-color: var(--btn-hover-color);
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 480px) {
+  .shop__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .product-card {
+    width: 48%;
+  }
+  .product-card__image img {
+    min-width: 210px;
+    min-height: 210px;
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+  }
+}
+
+/*
+@media (min-width: 768px) {
+  .shop__title {
+    font-size: 28px;
+  }
+  .shop__subtitle {
+    font-size: 48px;
+    margin-top: 20px;
+  }
+}
+*/
+/*
+@media (min-width: 992px) {
+}
+*/

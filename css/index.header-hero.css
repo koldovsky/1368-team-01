@@ -1,14 +1,19 @@
 .hero__content {
     background: url(../img/hero-section-background.jpeg);
-    background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: rgba(0, 0, 0, 0.7);*/
     background-size: cover;
-    background-position: center;
-    /*width: 100vw;*/
-    min-height: 840px;
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    min-height: 946px;
 }
 
 .hero__content-inner {
     padding: 244px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .hero__content-subtitle {
@@ -58,7 +63,6 @@
 .hero__content-buttons .button.button--primary {
     background-color: var(--brand-color);
     color: var(--color-light);
-    /*margin-right: 14px;*/
     border-color: var(--brand-color);
 }
 
@@ -89,7 +93,7 @@
  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 @media (min-width:801px) {
     .hero__content-title {
-        font-size: 4,437rem; /*71px*/
+        font-size: 4.437rem; /*71px*/
         font-weight: 400;
     }
 }

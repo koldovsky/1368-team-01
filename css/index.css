@@ -1,9 +1,12 @@
 @import "global.css";
+@import "index.popup.css";
 @import "global.header-nav.css";
 @import "index.header-hero.css";
 @import "index.section-natural.partial.css";
 @import "index.crafted.css";
 @import "index.main-history.css";
+@import "index.main-shop.css";
+@import "index.main-video.css";
 @import "index.main-about.css";
 @import "index.main-awards.css";
 @import "index.sections-winehub.css";

@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   /*outline: 1px solid red;*/
 }
 
@@ -20,6 +21,7 @@
   --index-history-font-color: #898084;
   --font-color-seconday: #c8693a;
   --color-light: rgb(255, 255, 255);
+  --color-secondary-text: rgb(137, 128, 130);
   --brand-color: rgb(200, 105, 58);
   --btn-hover-color: rgb(175, 86, 42);
   --btn-border-radius: 2px;

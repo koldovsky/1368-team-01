@@ -1,0 +1,52 @@
+.age__restriction-container {
+    background-color: var(--background-color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 24px;
+    height: 100vh;
+
+    .age__restriction-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        text-align: center;
+        row-gap: 20px;
+
+        .age__restriction-title {
+            color: var(--color-light);
+            font-family: var(--secondary-font);
+            font-size: 3.625rem; /*58px*/
+            line-height: 69.6px;
+            font-weight: 400;
+        }
+        
+        .age__restriction-description {
+            font-size: 1rem; /*16px*/
+            color: var(--color-secondary-text);
+            line-height: 25.6px;
+        }
+    }
+}
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width:600px) {
+    .age__restriction-container {
+        padding: 325px 0 315px 0;
+
+        .age__restriction-inner {
+            margin: 0 160px;
+
+            .age__restriction-title {
+                font-size: 5.25rem; /*84px*/
+                line-height: 100.8px;
+            }
+
+            .age__restriction-description {
+                line-height: 25.6px;
+            }
+        }
+    }
+}

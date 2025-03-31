@@ -1,0 +1,115 @@
+.video {
+  background-image: url("../img/background-BW-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  background-color: var(--background-color-dark);
+  padding: 90px 0 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .video {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.video__title__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 10px;
+  padding: 10px 24px;
+}
+
+@media (min-width: 768px) {
+    .video__title__container {
+        width: calc(40% - 20px);
+        padding: 10px 32px;
+    }
+}
+
+.video__title {
+  color: var(--brand-color);
+  font-family: var(--accent-font), serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.video__subtitle {
+  color: var(--color-light);
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.video__p {
+  font-family: "Rubik", sans-serif; /*primary font*/
+  color: var(--color-light);
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+.video__external__link {
+  font-family: "Rubik", sans-serif; /*primary font*/
+  color: var(--color-light);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-flex; /* Aligns text and icon in one line */
+  align-items: center; /* Centers items vertically */
+  gap: 8px; /* Adds space between text and icon */
+}
+
+.video__arrow__icon {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  vertical-align: middle;
+}
+
+.video__play__icon__container {
+    align-self: flex-start;
+    margin: 32px 24px;
+}
+@media (min-width: 768px){
+    .video__play__icon__container{
+        width: calc(10%);
+        align-self: center;
+        justify-content: center;
+        margin: 32px;
+    }
+}
+
+.video__play__icon {
+  width: 50px;
+  height: 50px;
+  color: var(--brand-color);
+}
+
+.video__link {
+  font-family: "Rubik", sans-serif;
+  color: var(--color-light);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .video__empty__container {
+        width: calc(40% - 20px);
+    }
+}

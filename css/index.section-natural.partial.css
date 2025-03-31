@@ -1,3 +1,4 @@
+/** Olena Hrynyshyn */
 .natural {
   background-color: var(--background-color-dark);
   color: var(--color-light);
@@ -62,8 +63,26 @@
   background-image: url(../img/natural_card-3.jpeg);
 }
 
+.natural__cards-card p {
+  margin-bottom: 15px;
+}
+
+.natural__cards-more {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  gap: 10px;
+}
+.natural__cards-more a:hover {
+  color: var(--brand-color);
+}
+
+.natural__cards-more svg {
+  vertical-align: middle;
+}
+
 .natural__special {
-  padding: 50px 0 100px;
+  padding: 50px 0 50px;
 }
 
 .natural__special-title {
@@ -73,9 +92,11 @@
   flex-direction: column;
   padding-bottom: 42px;
 }
+
 .natural__special-title p:first-of-type {
   font-family: var(--secondary-font);
-  font-size: 48px;
+  font-size: 36px;
+  margin: 24px 16px;
 }
 .natural__special-title p {
   color: var(--color-light);
@@ -101,6 +122,44 @@
   text-align: left;
 }
 
+.natural__countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+
+  h3 {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-weight: 100;
+    margin: 24px 16px;
+  }
+
+  .natural__countdoun-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 16px 42px 16px;
+
+    h4 {
+    color: var(--brand-color);
+    font-family: var(--accent-font);
+    font-size: 46px;
+    font-weight: 100;
+    }
+  }
+  .year {
+    display: none;
+  }
+
+  .loading {
+    height: 260px;
+  }
+}
+
 @media (min-width: 900px) {
   .natural__cards {
     display: grid;
@@ -114,5 +173,13 @@
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-items: start;
+  }
+  .natural__special-title p:first-of-type {
+    font-size: 48px;
+  } 
+  .natural__countdown{
+    h3 {
+      font-size: 42px;
+    }
   }
 }
