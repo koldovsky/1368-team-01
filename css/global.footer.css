@@ -207,7 +207,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
         justify-content: space-between;
-        align-items: flex-start; 
+        justify-content: center;
         gap: 30px;
         max-width: 1000px;
         margin: 0 auto;
