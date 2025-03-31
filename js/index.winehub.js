@@ -6,12 +6,14 @@ const categories = [
     title: "Red Wines",
     description: "Great selection of red wines for you.",
     imageClass: "winehub__red",
+    tag: "red",
   },
   {
     id: "2",
     title: "White Wines",
     description: "Top white wines for any occasion.",
     imageClass: "winehub__white",
+    tag: "white",
   },
 ];
 
@@ -29,7 +31,7 @@ function rendercategories(categories) {
           ${category.description}
           </p>
           <div class="winehub__button--container">
-            <a href="#" class="winehub__button">Shop red wines</a>
+            <a href="#" class="winehub__button">Shop ${category.tag} wines</a>
           </div>
         </div>
       </div>`;
