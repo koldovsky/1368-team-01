@@ -204,12 +204,12 @@
 @media (max-width: 768px) {
 
     .footer__info-top {
-        display: flex;
+        grid-template-columns: repeat(1, 1fr); 
         justify-content: space-between;
         align-items: flex-start; 
         flex-wrap: wrap; 
         gap: 30px;
-        max-width: 1190px;
+        max-width: 1000px;
         margin: 0 auto;
         padding-top: 110px ; 
         padding-bottom: 15px ;
