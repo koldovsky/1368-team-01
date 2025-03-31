@@ -58,6 +58,7 @@
 .footer__column {
     min-width: 200px;
     margin:  60px 15px;
+    padding: 0 15px;
 }
 
 .footer__column-title {
@@ -70,9 +71,6 @@
     list-style: none;
 }
 
-.footer__column{
-    padding: 0 15px;
-}
 
 
 .footer__link-item a{
@@ -183,6 +181,8 @@
 
 }
 
+
+
 @media (max-width:1010px) {
 
     .footer__container{
@@ -195,6 +195,12 @@
         padding: 0 10px; 
         box-sizing: border-box; 
     }
+    .footer__column {
+        min-width: 100px;
+        margin:  40px 15px;
+        padding: 0 15px;
+    }
+    
 }
 
 @media (max-width: 768px) {
