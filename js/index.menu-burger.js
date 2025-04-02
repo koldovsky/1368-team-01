@@ -1,46 +1,31 @@
 /** Alisa Korniienko */
-/*document.querySelector(".header__burger").addEventListener("click", function() {
-    this.classList.toggle("active");
-    document.querySelector(".header__menu").classList.toggle("open");
-    document.querySelector(".header__socials").classList.toggle("open");
-});*/
+// Get DOM elements
+const header = document.querySelector(".header");
+const burger = document.querySelector(".header__burger");
+const nav = document.querySelector(".header__nav");
+const menuLinks = document.querySelectorAll(".header__menu-link");
+const socialLinks = document.querySelectorAll(".header__social-link");
 
-const menu = document.querySelector(".header__menu");
-const menuBtn = document.querySelector(".header__burger");
-const socials = document.querySelector(".header__socials");
+// Toggle menu function
+function toggleMenu() {
+    header.classList.toggle("is-open");
+    burger.classList.toggle("is-active");
+    nav.classList.toggle("is-open");
+    document.body.classList.toggle("no-scroll");
+}
 
-//if (menu && menuBtn) {
-    menuBtn.addEventListener("click", () => {
-        menu.classList.toggle("open");
-        menuBtn.classList.toggle("active");
-        socials.classList.toggle("open");
-        document.body.classList.toggle("lock");
-    });
+// Close menu function
+function closeMenu() {
+    burger.classList.remove("is-active");
+    nav.classList.remove("is-open");
+    document.body.classList.remove("no-scroll");
+}
 
-    const links = menu.querySelectorAll(".header__menu-link");
+// Add click event listener to burger button
+burger.addEventListener("click", toggleMenu);
 
-    links.forEach(link => {
-        link.addEventListener("click", () => {
-            console.log("clicked");
-            menu.classList.remove("open");
-            menuBtn.classList.remove("active");
-            socials.classList.remove("open");
-            document.body.classList.remove("lock");
-        })
-    });
-//}
-/**TODO*/
-/*const anchors = document.querySelectorAll("a[href*='#']");
 
-anchors.forEach(anchor => {
-    anchor.addEventListener("click", event => {
-        event.preventDefault();
-
-        const blockId = anchor.getAttribute("href").substring(1);
-
-        document.querySelector(blockId).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
-    })
-});*/
+// Add click event listeners to all menu links
+menuLinks.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+});
