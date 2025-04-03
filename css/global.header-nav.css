@@ -23,7 +23,7 @@
 }
 
 .header__logo img {
-    width: 150px;
+    width: 176px;
 }
 
 .header__burger {
@@ -110,11 +110,13 @@
 
 .header__socials-link svg:hover {
     all: initial; /* reset css */
-}
-
-.header__socials-link svg:hover path {
-    fill: var(--brand-color);
-    transition: fill 0.2s ease-out;
+    path {
+        fill: var(--brand-color);
+        transition: fill 0.2s ease-out;
+    }
+    path.logo_2gS {
+        fill-opacity: 0;
+    }
 }
 
 .header__nav.is-open {
@@ -145,10 +147,6 @@
 
 /* Smartphone Landscape (від 576px до 989px) */
 @media (min-width: 576px) {
-    .header__logo img {
-        width: 170px;
-    }
-
     .header__menu {
         gap: var(--spacing-md);
     }
@@ -179,7 +177,7 @@
         flex-direction: row;
         opacity: 1;
         padding: 0;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-md);
     }
 
     .header__menu-item {
@@ -189,10 +187,7 @@
 
     .header__menu-link {
         padding: 0;
-    }
-
-    .header__logo img {
-        width: 176px;
+        font-size: 0.875rem;
     }
 }
 

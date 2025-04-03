@@ -14,6 +14,7 @@ function toggleMenu() {
 function closeMenu() {
     burger.classList.remove("is-active");
     nav.classList.remove("is-open");
+    header.classList.remove("is-open");
     document.body.classList.remove("no-scroll");
 }
 
