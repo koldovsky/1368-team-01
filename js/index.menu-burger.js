@@ -1,12 +1,9 @@
 /** Alisa Korniienko */
-// Get DOM elements
 const header = document.querySelector(".header");
 const burger = document.querySelector(".header__burger");
 const nav = document.querySelector(".header__nav");
 const menuLinks = document.querySelectorAll(".header__menu-link");
-const socialLinks = document.querySelectorAll(".header__social-link");
 
-// Toggle menu function
 function toggleMenu() {
     header.classList.toggle("is-open");
     burger.classList.toggle("is-active");
@@ -14,18 +11,14 @@ function toggleMenu() {
     document.body.classList.toggle("no-scroll");
 }
 
-// Close menu function
 function closeMenu() {
     burger.classList.remove("is-active");
     nav.classList.remove("is-open");
     document.body.classList.remove("no-scroll");
 }
 
-// Add click event listener to burger button
 burger.addEventListener("click", toggleMenu);
 
-
-// Add click event listeners to all menu links
 menuLinks.forEach((link) => {
     link.addEventListener("click", closeMenu);
 });
