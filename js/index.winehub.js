@@ -31,7 +31,7 @@ function rendercategories(categories) {
           ${category.description}
           </p>
           <div class="winehub__button--container">
-            <a href="#" class="winehub__button">Shop ${category.tag} wines</a>
+            <a href="#shop" class="winehub__button">Shop ${category.tag} wines</a>
           </div>
         </div>
       </div>`;

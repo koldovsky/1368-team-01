@@ -6,8 +6,22 @@
   background-attachment: fixed;
   position: relative;
   background-color: var(--background-color-dark);
-  padding: 90px 0 90px;
-  text-align: center;
+  padding: 90px 0;
+  /*text-align: center;*/
+}
+@media (min-width: 768px) {
+  .video {
+    padding: 120px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .video {
+    padding: 160px 0;
+  }
+}
+
+.video__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -15,9 +29,11 @@
 }
 
 @media (min-width: 768px) {
-  .video {
+  .video__container {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -32,25 +48,46 @@
 }
 
 @media (min-width: 768px) {
-    .video__title__container {
-        width: calc(40% - 20px);
-        padding: 10px 32px;
-    }
+  .video__title__container {
+    width: calc(40%);
+    padding: 10px 32px;
+  }
 }
 
 .video__title {
   color: var(--brand-color);
   font-family: var(--accent-font), serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
+}
+
+@media (min-width: 480px) {
+  .video__title {
+    font-size: 24px;
+    font-weight: 400;
+  }
 }
 
 .video__subtitle {
   color: var(--color-light);
   font-family: var(--secondary-font);
   font-weight: 400;
-  font-size: 48px;
+  font-size: 36px;
   margin-top: 20px;
+}
+
+@media (min-width: 480px) {
+  .video__subtitle {
+    font-size: 48px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1024px) {
+  .video__subtitle {
+    font-size: 80px;
+    font-weight: 400;
+  }
 }
 
 .video__p {
@@ -58,6 +95,7 @@
   color: var(--color-light);
   font-size: 16px;
   font-weight: 100;
+  line-height: 1.6;
   margin-top: 20px;
 }
 
@@ -81,16 +119,17 @@
 }
 
 .video__play__icon__container {
-    align-self: flex-start;
-    margin: 32px 24px;
+  align-self: flex-start;
+  margin: 32px 24px;
 }
-@media (min-width: 768px){
-    .video__play__icon__container{
-        width: calc(10%);
-        align-self: center;
-        justify-content: center;
-        margin: 32px;
-    }
+
+@media (min-width: 768px) {
+  .video__play__icon__container {
+    width: calc(10%);
+    align-self: center;
+    justify-content: center;
+    margin: 32px;
+  }
 }
 
 .video__play__icon {
@@ -109,7 +148,7 @@
 }
 
 @media (min-width: 768px) {
-    .video__empty__container {
-        width: calc(40% - 20px);
-    }
+  .video__empty__container {
+    width: calc(40%);
+  }
 }

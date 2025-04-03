@@ -13,7 +13,7 @@
 }
 
 :root {
-  font-family: "Rubik", sans-serif; /*primary font*/
+  font-family: "Rubik", sans-serif;
   --secondary-font: "Prata", serif;
   --accent-font: "Great Vibes", cursive;
   --index-history-p-font: "Rubik", sans-serif;
@@ -25,13 +25,21 @@
   --brand-color: rgb(200, 105, 58);
   --btn-hover-color: rgb(175, 86, 42);
   --btn-border-radius: 2px;
+  --header-height: 104px;
   scroll-behavior: smooth;
   --mobile-background-color-nav: rgb(26, 21, 18);
+  --header-background-color: rgba(0, 0, 0, 0.5);
   --background-color-dark:#261e1c;
   --background-color-footer:rgb(27, 22, 19);
   --footer-color-text:rgb(137, 128, 130);
   --background-color-footer-email: rgba(73, 73, 73, 0.24);
   --background-color-footer-bottom:rgb(19, 15, 14);
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --transition-speed: 0.2s;
 }
 
 .container {
@@ -42,4 +50,8 @@
 img {
   display: block;
   max-width: 100%;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }

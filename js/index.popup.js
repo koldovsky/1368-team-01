@@ -1,4 +1,4 @@
-//Alisa Korniienko
+/** Alisa Korniienko */
 window.addEventListener('load', () => {
     const popup = document.querySelector('div.popup__container');
     const closeBtn = document.querySelector('a.close__popup');
@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
 
     if (popup) {
         popup.classList.add('open__popup');
-        //document.body.style.overflowY = 'hidden';
+        document.body.style.overflowY = 'hidden';
     }
 
     closeBtn?.addEventListener('click', (event) => {
