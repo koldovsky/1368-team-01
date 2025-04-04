@@ -9,5 +9,27 @@
             <a class="crafted__button crafted__button--primary" href="#shop">Buy wines</a>
             <a class="crafted__button crafted__button--secondary" href="#faq">Learn more</a>
         </div>
+        <div class="crafted__accordion">
+            <div class="crafted__accordion--item">
+                <p class="crafted__accordion--text">Write to us</p>
+                <div class="crafted__accordion--icon"></div>
+            </div>
+            <form id="craftedform" method="POST" class="crafted__accordion--form">
+
+                <input type="hidden" name="access_key" value="0d2161ae-8572-4059-a69a-604f4e7e2176">
+                <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                <input type="checkbox" name="botcheck" id="" style="display: none;">
+            
+                <!-- Custom Form Data -->
+                <input type="email" name="email" placeholder="email" required>
+                <input type="text" name="name" placeholder="name" required>
+                <textarea name="message" placeholder="message" required></textarea>
+            
+                <button type="submit">Send</button>
+            
+                <div id="craftedresult"></div>
+            
+            </form>
+        </div>
     </div>
 </section>
