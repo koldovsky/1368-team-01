@@ -1,10 +1,6 @@
 .hero__content {
-    background: url(../img/hero-section-background.jpeg);
-    /*background-color: rgba(0, 0, 0, 0.7);*/
+    background: url(../img/hero-section-background.jpeg) no-repeat left fixed;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: left;
-    background-repeat: no-repeat;
     min-height: 946px;
 }
 
@@ -17,7 +13,7 @@
 }
 
 .hero__content-subtitle {
-    font-size: 0.875rem; /*14px*/
+    font-size: 0.875rem;
     color: var(--brand-color);
     font-family: var(--accent-font);
     font-weight: 400;
@@ -26,7 +22,7 @@
 }
 
 .hero__content-title {
-    font-size: 3.625rem; /*58px*/
+    font-size: 3.625rem;
     color: var(--color-light);
     font-family: var(--secondary-font);
     font-weight: 400;
@@ -39,13 +35,13 @@
 }
 
 .hero__content-description {
-    font-size: 1.125rem; /*18px*/
+    font-size: 1.125rem;
     color: var(--color-light);
     padding-bottom: 47px;
 }
 
 .button {
-    font-size: 1.031rem; /*16.5px*/
+    font-size: 1.031rem;
     text-decoration: none;
     border-radius: var(--btn-border-radius);
     border-width: 3px;
@@ -83,17 +79,39 @@
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (min-width:600px) {
-    .hero__content-inner {
-        padding: 244px 24px 0 44%;
+    .hero__content-subtitle {
+        font-size: 1.3rem;
     }
 }
 
- /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 @media (min-width:801px) {
     .hero__content-title {
-        font-size: 4.437rem; /*71px*/
+        font-size: 4.44rem;
         font-weight: 400;
     }
 }
+
+@media (min-width: 990px) {
+    .hero__content-title {
+        font-size: 5.25rem;
+    }
+}
+
+@media (min-width:1025px) {
+    .hero__content-inner {
+        text-wrap: nowrap;
+    }
+}
+
+@media (min-width:2400px) {
+    .hero__content-inner {
+        padding: 244px 24px 0 22%;
+        align-items: flex-start;
+        text-align: start;
+    }
+}
+
+
+
+
