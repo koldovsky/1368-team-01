@@ -95,7 +95,7 @@
 @media (max-width: 990px) {
     .about-us {
         grid-template-columns: 1fr;
-        padding: 0 10%;
+        padding: 0 8%;
         background-position: right;
         
     }
@@ -117,7 +117,13 @@
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width:400px) {
+    .about-us {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+        background-position: right;
+        
+    }
     .about-us__label {
         font-size: 16px;
     }
@@ -130,4 +136,6 @@
         font-size: 14px;
     }
 }
+
+
 
